@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Mostima</title>
-    <link>https://sylvester1001.github.io/authors/</link>
+    <link>https://mostima.blog/authors/</link>
     <description>Recent content in Authors on Mostima</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Mostima</copyright>
-    <atom:link href="https://sylvester1001.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mostima.blog/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

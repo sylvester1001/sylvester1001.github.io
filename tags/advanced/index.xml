@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Advanced on Mostima</title>
-    <link>https://sylvester1001.github.io/tags/advanced/</link>
+    <link>https://mostima.blog/tags/advanced/</link>
     <description>Recent content in Advanced on Mostima</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Mostima</copyright>
-    <atom:link href="https://sylvester1001.github.io/tags/advanced/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mostima.blog/tags/advanced/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

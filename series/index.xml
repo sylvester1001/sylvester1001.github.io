@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Mostima</title>
-    <link>https://sylvester1001.github.io/series/</link>
+    <link>https://mostima.blog/series/</link>
     <description>Recent content in Series on Mostima</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Mostima</copyright>
-    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sylvester1001.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://sylvester1001.github.io/series/blog/</link>
+      <link>https://mostima.blog/series/blog/</link>
       <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://sylvester1001.github.io/series/blog/</guid>
+      <guid>https://mostima.blog/series/blog/</guid>
       <description></description>
       
     </item>
