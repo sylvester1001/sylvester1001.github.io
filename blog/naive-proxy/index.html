@@ -99,7 +99,7 @@
     "keywords": ["proxy"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "277"
+    "wordCount": "278"
   }]
   </script>
 
@@ -427,7 +427,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-12 00:00:00 &#43;0000 UTC">12 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>277 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-12 00:00:00 &#43;0000 UTC">12 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>278 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/naive-proxy/index.md" title="views">0</span> 
     
@@ -1143,8 +1143,8 @@
 <ol start="2">
 <li>
 <p>写入文件配置</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">:443, naive.buliang0.tk #你的域名</span>
-</span></span><span class="line"><span class="cl"><span class="na">tls example@example.com #你的邮箱</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">:443, your.domain.com #你的域名</span>
+</span></span><span class="line"><span class="cl"><span class="na">tls your@mail.com #你的邮箱</span>
 </span></span><span class="line"><span class="cl"><span class="na">route {</span>
 </span></span><span class="line"><span class="cl"> <span class="na">forward_proxy {</span>
 </span></span><span class="line"><span class="cl">   <span class="na">basic_auth user pass #用户名和密码</span>
@@ -1178,12 +1178,13 @@
 <li>
 <p>前台运行, 断开与vps连接后进程终端</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./caddy run
-</span></span></code></pre></div><p>一般用来查看caddy运行输出信息时使用</p>
+</span></span></code></pre></div><p>我一般在不确定是否自己配置完全无误时用来查看caddy运行输出信息时使用</p>
 </li>
 <li>
 <p>后台运行</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./caddy start
-</span></span></code></pre></div></li>
+</span></span></code></pre></div><p>如可以确保配置文件无误时直接使用后台启动</p>
+</li>
 </ul>
 
         </div>
