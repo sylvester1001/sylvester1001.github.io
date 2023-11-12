@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Mostima</copyright>
-    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Digital Ocean服务器从零搭建NaïveProxy节点</title>
       <link>https://mostima.blog/blog/naive-proxy/</link>
-      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/naive-proxy/</guid>
       <description>简介 # 什么是DigitalOcean # DigitalOcean 是一家领先的云基础设施供应商，为开发人员提供一个易于使用、灵活和可扩展的平台，用于部署、管理和扩展应用程序。</description>
