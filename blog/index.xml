@@ -38,15 +38,5 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/first-blog/featured.png" />
     </item>
     
-    <item>
-      <title>Welcome to Blowfish</title>
-      <link>https://mostima.blog/blog/welcome/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mostima.blog/blog/welcome/</guid>
-      <description>Blowfish is packed with tons of features.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/welcome/featured.png" />
-    </item>
-    
   </channel>
 </rss>
