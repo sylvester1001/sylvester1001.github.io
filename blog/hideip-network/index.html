@@ -100,7 +100,7 @@
     "keywords": ["proxy"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "257"
+    "wordCount": "274"
   }]
   </script>
 
@@ -428,7 +428,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-11 00:00:00 &#43;0000 UTC">11 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>257 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-11 00:00:00 &#43;0000 UTC">11 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>274 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/hideip-network/index.md" title="views">0</span> 
     
@@ -634,11 +634,31 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#搭建需求">搭建需求</a></li>
-    <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
-    <li><a href="#下载hnet文件--安装">下载hnet文件 &amp; 安装</a></li>
+    <li><a href="#搭建需求">搭建需求</a>
+      <ul>
+        <li><a href="#基本需求">基本需求</a></li>
+        <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#下载hnet文件--安装">下载HNet文件 &amp; 安装</a>
+      <ul>
+        <li><a href="#下载项目文件">下载项目文件</a></li>
+        <li><a href="#安装项目">安装项目</a></li>
+      </ul>
+    </li>
     <li><a href="#配置nginx">配置nginx</a></li>
-    <li><a href="#安装pm2配置后台运行">安装pm2配置后台运行</a></li>
+    <li><a href="#启动nginx">启动nginx</a>
+      <ul>
+        <li><a href="#加载配置">加载配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装pm2">安装pm2</a>
+      <ul>
+        <li><a href="#什么是pm2">什么是pm2</a></li>
+        <li><a href="#安装">安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#启动hnet并后台运行">启动HNet并后台运行</a></li>
   </ul>
 </nav>
   </div>
@@ -653,11 +673,31 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#搭建需求">搭建需求</a></li>
-    <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
-    <li><a href="#下载hnet文件--安装">下载hnet文件 &amp; 安装</a></li>
+    <li><a href="#搭建需求">搭建需求</a>
+      <ul>
+        <li><a href="#基本需求">基本需求</a></li>
+        <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#下载hnet文件--安装">下载HNet文件 &amp; 安装</a>
+      <ul>
+        <li><a href="#下载项目文件">下载项目文件</a></li>
+        <li><a href="#安装项目">安装项目</a></li>
+      </ul>
+    </li>
     <li><a href="#配置nginx">配置nginx</a></li>
-    <li><a href="#安装pm2配置后台运行">安装pm2配置后台运行</a></li>
+    <li><a href="#启动nginx">启动nginx</a>
+      <ul>
+        <li><a href="#加载配置">加载配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装pm2">安装pm2</a>
+      <ul>
+        <li><a href="#什么是pm2">什么是pm2</a></li>
+        <li><a href="#安装">安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#启动hnet并后台运行">启动HNet并后台运行</a></li>
   </ul>
 </nav>
   </div>
@@ -758,6 +798,14 @@
             style="text-decoration-line: none !important;" href="#%e6%90%ad%e5%bb%ba%e9%9c%80%e6%b1%82" aria-label="锚点">#</a></span>        
     
 </h2>
+<div id="基本需求" class="anchor"></div>
+<h3 class="relative group">基本需求 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%9f%ba%e6%9c%ac%e9%9c%80%e6%b1%82" aria-label="锚点">#</a></span>        
+    
+</h3>
 <ol>
 <li>
 <p>一台境外的服务器</p>
@@ -770,13 +818,13 @@
 </li>
 </ol>
 <div id="环境需求--安装方式" class="anchor"></div>
-<h2 class="relative group">环境需求 &amp; 安装方式 
+<h3 class="relative group">环境需求 &amp; 安装方式 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
             style="text-decoration-line: none !important;" href="#%e7%8e%af%e5%a2%83%e9%9c%80%e6%b1%82--%e5%ae%89%e8%a3%85%e6%96%b9%e5%bc%8f" aria-label="锚点">#</a></span>        
     
-</h2>
+</h3>
 <p>我的服务器使用Arch Linux，故我将使用Arch Linux的包管理器安装。如果你使用的是别的Linux发行版（如Debian，Ubuntu）等，请自行查看包管理器安装命令。</p>
 <ul>
 <li>
@@ -837,7 +885,7 @@
 </span></span><span class="line"><span class="cl">root@SF-Naive-1:~# nginx -v
 </span></span><span class="line"><span class="cl">nginx version: nginx/1.22.1
 </span></span></code></pre></div><div id="下载hnet文件--安装" class="anchor"></div>
-<h2 class="relative group">下载hnet文件 &amp; 安装 
+<h2 class="relative group">下载HNet文件 &amp; 安装 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
@@ -846,20 +894,29 @@
 </h2>
 <p>详情可参考<a href="https://official.hideip.network/"   target="_blank">
     hideip.network</a> 官方网站</p>
-<ol>
-<li>
-<p>下载项目文件</p>
+<div id="下载项目文件" class="anchor"></div>
+<h3 class="relative group">下载项目文件 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%b8%8b%e8%bd%bd%e9%a1%b9%e7%9b%ae%e6%96%87%e4%bb%b6" aria-label="锚点">#</a></span>        
+    
+</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone -b v3 https://github.com/Hideipnetwork/hideipnetwork-web.git
-</span></span></code></pre></div></li>
-<li>
-<p>进入目录并安装项目</p>
+</span></span></code></pre></div><div id="安装项目" class="anchor"></div>
+<h3 class="relative group">安装项目 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85%e9%a1%b9%e7%9b%ae" aria-label="锚点">#</a></span>        
+    
+</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 进入目录</span>
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> hideipnetwork-web
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 安装并初始化</span>
 </span></span><span class="line"><span class="cl">npm install
-</span></span></code></pre></div></li>
-</ol>
-<div id="配置nginx" class="anchor"></div>
+</span></span></code></pre></div><div id="配置nginx" class="anchor"></div>
 <h2 class="relative group">配置nginx 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
@@ -899,35 +956,75 @@
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div></li>
-<li>
-<p>加载配置并启动nginx</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 加载上方填入的配置</span>
-</span></span><span class="line"><span class="cl">sudo systemctl reload nginx
-</span></span><span class="line"><span class="cl"><span class="c1"># 启动nginx</span>
-</span></span><span class="line"><span class="cl">sudo systemctl start nginx
-</span></span><span class="line"><span class="cl"><span class="c1"># 或者</span>
-</span></span><span class="line"><span class="cl">sudo systemctl restart nginx
-</span></span></code></pre></div></li>
 </ol>
-<div id="安装pm2配置后台运行" class="anchor"></div>
-<h2 class="relative group">安装pm2配置后台运行 
+<div id="启动nginx" class="anchor"></div>
+<h2 class="relative group">启动nginx 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85pm2%e9%85%8d%e7%bd%ae%e5%90%8e%e5%8f%b0%e8%bf%90%e8%a1%8c" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%90%af%e5%8a%a8nginx" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>通过pm2管理hnet在后台运行</p>
+<div id="加载配置" class="anchor"></div>
+<h3 class="relative group">加载配置 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%8a%a0%e8%bd%bd%e9%85%8d%e7%bd%ae" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>首先需要将之前写入的配置文件重新加载</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 加载上方填入的配置</span>
+</span></span><span class="line"><span class="cl">sudo systemctl reload nginx
+</span></span></code></pre></div><p>然后启动nginx服务</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 启动nginx</span>
+</span></span><span class="line"><span class="cl">sudo systemctl start nginx
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者</span>
+</span></span><span class="line"><span class="cl">sudo systemctl restart nginx
+</span></span></code></pre></div><div id="安装pm2" class="anchor"></div>
+<h2 class="relative group">安装pm2 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85pm2" aria-label="锚点">#</a></span>        
+    
+</h2>
+<div id="什么是pm2" class="anchor"></div>
+<h3 class="relative group">什么是pm2 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%bb%80%e4%b9%88%e6%98%afpm2" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>PM2是node进程管理工具，可以利用它来简化很多node应用管理的繁琐任务，如性能监控、自动重启、负载均衡等，而且使用非常简单。</p>
+<div id="安装" class="anchor"></div>
+<h3 class="relative group">安装 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85" aria-label="锚点">#</a></span>        
+    
+</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 进入项目目录</span>
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> /root/hideipnetwork-web
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#安装pm2</span>
 </span></span><span class="line"><span class="cl">npm i pm2 -g
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#查看是否正常安装</span>
+</span></span></code></pre></div><p>安装完成后使用以下命令查看是否成功安装</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#查看是否正常安装</span>
 </span></span><span class="line"><span class="cl">pm2 --version
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#启动hnet</span>
+</span></span></code></pre></div><div id="启动hnet并后台运行" class="anchor"></div>
+<h2 class="relative group">启动HNet并后台运行 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%90%af%e5%8a%a8hnet%e5%b9%b6%e5%90%8e%e5%8f%b0%e8%bf%90%e8%a1%8c" aria-label="锚点">#</a></span>        
+    
+</h2>
+<p>通过pm2管理hnet在后台运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#启动hnet并后台运行</span>
 </span></span><span class="line"><span class="cl">pm2 start index.mjs --name HNet
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 查看是否正常启动</span>
