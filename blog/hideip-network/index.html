@@ -84,7 +84,7 @@
     "name": "使用Hideip-network搭建网页代理",
     "headline": "使用Hideip-network搭建网页代理",
     "description": "使用hideip network搭建在线网页代理方法.",
-    "abstract": "前置需求 \u0026amp; 安装方式 # node",
+    "abstract": "前言 # 本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。",
     "inLanguage": "zh-cn",
     "url" : "https:\/\/mostima.blog\/blog\/hideip-network\/",
     "author" : {
@@ -100,7 +100,7 @@
     "keywords": ["proxy"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "239"
+    "wordCount": "257"
   }]
   </script>
 
@@ -428,7 +428,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-11 00:00:00 &#43;0000 UTC">11 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>239 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-11 00:00:00 &#43;0000 UTC">11 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>257 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/hideip-network/index.md" title="views">0</span> 
     
@@ -633,7 +633,9 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#前置需求--安装方式">前置需求 &amp; 安装方式</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#搭建需求">搭建需求</a></li>
+    <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
     <li><a href="#下载hnet文件--安装">下载hnet文件 &amp; 安装</a></li>
     <li><a href="#配置nginx">配置nginx</a></li>
     <li><a href="#安装pm2配置后台运行">安装pm2配置后台运行</a></li>
@@ -650,7 +652,9 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#前置需求--安装方式">前置需求 &amp; 安装方式</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#搭建需求">搭建需求</a></li>
+    <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
     <li><a href="#下载hnet文件--安装">下载hnet文件 &amp; 安装</a></li>
     <li><a href="#配置nginx">配置nginx</a></li>
     <li><a href="#安装pm2配置后台运行">安装pm2配置后台运行</a></li>
@@ -737,29 +741,89 @@
 
 
         <div class="max-w-prose mb-20">
-          <div id="前置需求--安装方式" class="anchor"></div>
-<h2 class="relative group">前置需求 &amp; 安装方式 
+          <div id="前言" class="anchor"></div>
+<h2 class="relative group">前言 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e5%89%8d%e7%bd%ae%e9%9c%80%e6%b1%82--%e5%ae%89%e8%a3%85%e6%96%b9%e5%bc%8f" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%89%8d%e8%a8%80" aria-label="锚点">#</a></span>        
     
 </h2>
+<p>本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。</p>
+<div id="搭建需求" class="anchor"></div>
+<h2 class="relative group">搭建需求 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%90%ad%e5%bb%ba%e9%9c%80%e6%b1%82" aria-label="锚点">#</a></span>        
+    
+</h2>
+<ol>
+<li>
+<p>一台境外的服务器</p>
+<p>可从<a href="www.vultr.com"  >
+    Vultr</a>，<a href="www.digitalocean.com"  >
+    DigitalOcean</a> 等云服务器商租用</p>
+</li>
+<li>
+<p>了解基本的终端命令行知识，例如：<code>cd</code>, <code>ls</code>, <code>systemctl</code> 等</p>
+</li>
+</ol>
+<div id="环境需求--安装方式" class="anchor"></div>
+<h2 class="relative group">环境需求 &amp; 安装方式 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%8e%af%e5%a2%83%e9%9c%80%e6%b1%82--%e5%ae%89%e8%a3%85%e6%96%b9%e5%bc%8f" aria-label="锚点">#</a></span>        
+    
+</h2>
+<p>我的服务器使用Arch Linux，故我将使用Arch Linux的包管理器安装。如果你使用的是别的Linux发行版（如Debian，Ubuntu）等，请自行查看包管理器安装命令。</p>
 <ul>
 <li>
 <p>node</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install nodejs
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S nodejs
 </span></span></code></pre></div></li>
 <li>
 <p>npm</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install npm
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S npm
 </span></span></code></pre></div></li>
 <li>
 <p>nginx</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install nginx
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S nginx
 </span></span></code></pre></div></li>
 </ul>
-<p>安装完成后, 使用以下命令查看是否有效, 注意node版本需要v16及以上, 如果apt 安装的版本低于v16, 建议手动安装</p>
+<p>安装完成后, 使用以下命令查看是否有效,</p>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    ><strong>注意:</strong> node版本需要v16及以上, 如果apt 安装的版本低于v16, 建议手动安装</span>
+</div>
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看安装是否有效</span>
 </span></span><span class="line"><span class="cl">node --version
 </span></span><span class="line"><span class="cl">npm --version
@@ -803,8 +867,8 @@
             style="text-decoration-line: none !important;" href="#%e9%85%8d%e7%bd%aenginx" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>由于HNet项目规定仅允许通过https访问, 所以需将本机56559端口反代.</p>
-<p>使用nginx, 让我们的域名 abc.def.xyz 可以访问到本机的 127.0.0.1:56559 端口</p>
+<p>由于HNet项目规定仅允许通过https访问, 且项目默认使用本机等56559端口，所以需使用nginx将本机56559端口反代.</p>
+<p>使用nginx, 让你的域名 abc.def.xyz 可以访问到本机的 127.0.0.1:56559 端口</p>
 <ol>
 <li>
 <p>在目录<code>/etc/nginx/conf.d</code> 创建文件 <code>hnet.conf</code></p>
@@ -880,7 +944,7 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># 使用pm2设置开机自启</span>
 </span></span><span class="line"><span class="cl">pm2 save
 </span></span><span class="line"><span class="cl">pm2 startup
-</span></span></code></pre></div><p>此时应该可以通过 <code>https://你的域名</code> 来访问HNet了.</p>
+</span></span></code></pre></div><p>至此应该可以通过 <code>https://你的域名</code> 来访问HNet了.</p>
 
         </div>
                 

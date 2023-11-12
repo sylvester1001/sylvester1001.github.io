@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on Mostima</title>
+    <link>https://mostima.blog/tags/test/</link>
+    <description>Recent content in test on Mostima</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Mostima</copyright>
+    <lastBuildDate>Fri, 11 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一篇博文测试</title>
+      <link>https://mostima.blog/blog/first-blog/</link>
+      <pubDate>Fri, 11 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/first-blog/</guid>
+      <description>Test</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/first-blog/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
