@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Mostima</title>
+    <link>https://mostima.blog/series/documentation/</link>
+    <description>Recent content in Documentation on Mostima</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Mostima</copyright>
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/series/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Blowfish</title>
+      <link>https://mostima.blog/blog/welcome/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/welcome/</guid>
+      <description>Blowfish is packed with tons of features.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/welcome/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
