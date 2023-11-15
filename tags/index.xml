@@ -9,7 +9,7 @@
     <copyright>© 2023 Mostima</copyright>
     <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blog</title>
+      <title>Blog</title>
       <link>https://mostima.blog/tags/blog/</link>
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
       
@@ -19,7 +19,27 @@
     </item>
     
     <item>
-      <title>hugo</title>
+      <title>Cusdis</title>
+      <link>https://mostima.blog/tags/cusdis/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/tags/cusdis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GitHub Pages</title>
+      <link>https://mostima.blog/tags/github-pages/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/tags/github-pages/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo</title>
       <link>https://mostima.blog/tags/hugo/</link>
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
       
