@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mind Wandering on Mostima</title>
+    <link>https://mostima.blog/tags/mind-wandering/</link>
+    <description>Recent content in Mind Wandering on Mostima</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Mostima</copyright>
+    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/mind-wandering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>睡前的一些胡思乱想</title>
+      <link>https://mostima.blog/blog/mind-wandering/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/mind-wandering/</guid>
+      <description>时光匆匆，工作马上一年了。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/mind-wandering/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
