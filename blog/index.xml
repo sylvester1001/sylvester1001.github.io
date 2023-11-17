@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Mostima</copyright>
-    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux 中配置 xrdp 远程桌面</title>
+      <link>https://mostima.blog/blog/xrdp-arch-linux/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/xrdp-arch-linux/</guid>
+      <description>前言 # 由于做 CAD 的缘故, 公司使用 Cadence Virtuoso 等 EDA 软件仅支持在 Linux 环境中运行, 再加之平时喜欢折腾, 在 Windows 或者 macOS 中使用虚拟机总没有一台宿主机来的舒坦 (其实就是想买电脑了).</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/xrdp-arch-linux/featured.png" />
+    </item>
+    
     <item>
       <title>睡前的一些胡思乱想</title>
       <link>https://mostima.blog/blog/mind-wandering/</link>
