@@ -3,19 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://mostima.blog/blog/xrdp-arch-linux/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://mostima.blog/blog/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mostima.blog/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mostima.blog/blog/mattermost/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mostima.blog/blog/xrdp-arch-linux/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -41,12 +47,6 @@
   <url>
     <loc>https://mostima.blog/blog/hideip-network/</loc>
     <lastmod>2023-11-11T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mostima.blog/blog/first-blog/</loc>
-    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

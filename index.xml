@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 Mostima</copyright>
-    <lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于 Docker 部署 Mattermost</title>
+      <link>https://mostima.blog/blog/mattermost/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/mattermost/</guid>
+      <description>本文记录如何使用 Docker 私有化部署可于生产环境中使用的Mattermost的方法.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/mattermost/featured.png" />
+    </item>
+    
     <item>
       <title>Arch Linux 中配置 xrdp 远程桌面</title>
       <link>https://mostima.blog/blog/xrdp-arch-linux/</link>
@@ -56,16 +66,6 @@
       <guid>https://mostima.blog/blog/hideip-network/</guid>
       <description>前言 # 本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hideip-network/featured.png" />
-    </item>
-    
-    <item>
-      <title>第一篇博文测试</title>
-      <link>https://mostima.blog/blog/first-blog/</link>
-      <pubDate>Fri, 11 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mostima.blog/blog/first-blog/</guid>
-      <description>Test</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/first-blog/featured.png" />
     </item>
     
   </channel>
