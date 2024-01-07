@@ -9,12 +9,12 @@
     <copyright>© 2024 Mostima</copyright>
     <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/hideip-network/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>使用 HNet Web(Hideip-network) 搭建网页代理</title>
+      <title>使用 HNet Web 搭建网页代理</title>
       <link>https://mostima.blog/blog/hnet/</link>
       <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/hnet/</guid>
-      <description>前言 # 本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。</description>
+      <description>前言 # 本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启 VPN，适用于禁止使用 VPN，或不便留下痕迹的情况。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hnet/featured.png" />
     </item>
     

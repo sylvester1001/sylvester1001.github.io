@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>使用 HNet Web(Hideip-network) 搭建网页代理 &middot; Mostima</title>
-  <meta name="title" content="使用 HNet Web(Hideip-network) 搭建网页代理 &middot; Mostima" />
+  <title>使用 HNet Web 搭建网页代理 &middot; Mostima</title>
+  <meta name="title" content="使用 HNet Web 搭建网页代理 &middot; Mostima" />
   
   <meta name="description" content="使用 HNet Web 搭建在线网页代理方法." />
   <meta name="keywords" content="Proxy, HNet, Hideip-network, " />
@@ -61,7 +61,7 @@
   
   
   
-  <meta property="og:title" content="使用 HNet Web(Hideip-network) 搭建网页代理" />
+  <meta property="og:title" content="使用 HNet Web 搭建网页代理" />
 <meta property="og:description" content="使用 HNet Web 搭建在线网页代理方法." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mostima.blog/blog/hnet/" /><meta property="og:image" content="https://mostima.blog/blog/hnet/featured.png"/><meta property="article:section" content="blog" />
@@ -70,7 +70,7 @@
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://mostima.blog/blog/hnet/featured.png"/>
-<meta name="twitter:title" content="使用 HNet Web(Hideip-network) 搭建网页代理"/>
+<meta name="twitter:title" content="使用 HNet Web 搭建网页代理"/>
 <meta name="twitter:description" content="使用 HNet Web 搭建在线网页代理方法."/>
 
   
@@ -79,10 +79,10 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Blog",
-    "name": "使用 HNet Web(Hideip-network) 搭建网页代理",
-    "headline": "使用 HNet Web(Hideip-network) 搭建网页代理",
+    "name": "使用 HNet Web 搭建网页代理",
+    "headline": "使用 HNet Web 搭建网页代理",
     "description": "使用 HNet Web 搭建在线网页代理方法.",
-    "abstract": "前言 # 本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。",
+    "abstract": "前言 # 本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启 VPN，适用于禁止使用 VPN，或不便留下痕迹的情况。",
     "inLanguage": "zh-cn",
     "url" : "https:\/\/mostima.blog\/blog\/hnet\/",
     "author" : {
@@ -98,7 +98,7 @@
     "keywords": ["Proxy","HNet","Hideip-network"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "274"
+    "wordCount": "315"
   }]
   </script>
 
@@ -403,7 +403,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      使用 HNet Web(Hideip-network) 搭建网页代理
+      使用 HNet Web 搭建网页代理
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -452,7 +452,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-11 00:00:00 &#43;0000 UTC">11 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>274 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-11 00:00:00 &#43;0000 UTC">11 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>315 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/hideip-network/index.md" title="views">0</span> 
     
@@ -704,25 +704,25 @@
         <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
       </ul>
     </li>
-    <li><a href="#下载hnet文件--安装">下载HNet文件 &amp; 安装</a>
+    <li><a href="#下载-hnet-文件--安装">下载 HNet 文件 &amp; 安装</a>
       <ul>
         <li><a href="#下载项目文件">下载项目文件</a></li>
         <li><a href="#安装项目">安装项目</a></li>
       </ul>
     </li>
-    <li><a href="#配置nginx">配置nginx</a></li>
-    <li><a href="#启动nginx">启动nginx</a>
+    <li><a href="#配置-nginx">配置 Nginx</a></li>
+    <li><a href="#启动-nginx">启动 Nginx</a>
       <ul>
         <li><a href="#加载配置">加载配置</a></li>
       </ul>
     </li>
-    <li><a href="#安装pm2">安装pm2</a>
+    <li><a href="#安装-pm2">安装 pm2</a>
       <ul>
-        <li><a href="#什么是pm2">什么是pm2</a></li>
+        <li><a href="#什么是-pm2">什么是 pm2</a></li>
         <li><a href="#安装">安装</a></li>
       </ul>
     </li>
-    <li><a href="#启动hnet并后台运行">启动HNet并后台运行</a></li>
+    <li><a href="#启动-hnet-并后台运行">启动 HNet 并后台运行</a></li>
   </ul>
 </nav>
   </div>
@@ -743,25 +743,25 @@
         <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
       </ul>
     </li>
-    <li><a href="#下载hnet文件--安装">下载HNet文件 &amp; 安装</a>
+    <li><a href="#下载-hnet-文件--安装">下载 HNet 文件 &amp; 安装</a>
       <ul>
         <li><a href="#下载项目文件">下载项目文件</a></li>
         <li><a href="#安装项目">安装项目</a></li>
       </ul>
     </li>
-    <li><a href="#配置nginx">配置nginx</a></li>
-    <li><a href="#启动nginx">启动nginx</a>
+    <li><a href="#配置-nginx">配置 Nginx</a></li>
+    <li><a href="#启动-nginx">启动 Nginx</a>
       <ul>
         <li><a href="#加载配置">加载配置</a></li>
       </ul>
     </li>
-    <li><a href="#安装pm2">安装pm2</a>
+    <li><a href="#安装-pm2">安装 pm2</a>
       <ul>
-        <li><a href="#什么是pm2">什么是pm2</a></li>
+        <li><a href="#什么是-pm2">什么是 pm2</a></li>
         <li><a href="#安装">安装</a></li>
       </ul>
     </li>
-    <li><a href="#启动hnet并后台运行">启动HNet并后台运行</a></li>
+    <li><a href="#启动-hnet-并后台运行">启动 HNet 并后台运行</a></li>
   </ul>
 </nav>
   </div>
@@ -824,7 +824,7 @@
             style="text-decoration-line: none !important;" href="#%e5%89%8d%e8%a8%80" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。</p>
+<p>本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启 VPN，适用于禁止使用 VPN，或不便留下痕迹的情况。</p>
 <div id="搭建需求" class="anchor"></div>
 <h2 class="relative group">搭建需求 
     <span
@@ -844,7 +844,7 @@
 <ol>
 <li>
 <p>一台境外的服务器</p>
-<p>可从<a href="www.vultr.com"  >
+<p>可从 <a href="www.vultr.com"  >
     Vultr</a>，<a href="www.digitalocean.com"  >
     DigitalOcean</a> 等云服务器商租用</p>
 </li>
@@ -860,7 +860,7 @@
             style="text-decoration-line: none !important;" href="#%e7%8e%af%e5%a2%83%e9%9c%80%e6%b1%82--%e5%ae%89%e8%a3%85%e6%96%b9%e5%bc%8f" aria-label="锚点">#</a></span>        
     
 </h3>
-<p>我的服务器使用Arch Linux，故我将使用Arch Linux的包管理器安装。如果你使用的是别的Linux发行版（如Debian，Ubuntu）等，请自行查看包管理器安装命令。</p>
+<p>我的服务器使用 Arch Linux，故我将使用 Arch Linux 的包管理器安装。如果你使用的是别的 Linux 发行版（如 Debian，Ubuntu）等，请自行查看包管理器安装命令。</p>
 <ul>
 <li>
 <p>node</p>
@@ -904,7 +904,7 @@
   <span
     
       class="dark:text-neutral-300"
-    ><strong>注意:</strong> node版本需要v16及以上, 如果apt 安装的版本低于v16, 建议手动安装</span>
+    ><strong>注意:</strong> <code>node</code> 版本需要 <code>v16</code> 及以上, 如果 <code>apt</code> 安装的版本低于 <code>v16</code>, 建议手动安装</span>
 </div>
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看安装是否有效</span>
@@ -919,15 +919,15 @@
 </span></span><span class="line"><span class="cl">9.2.0
 </span></span><span class="line"><span class="cl">root@SF-Naive-1:~# nginx -v
 </span></span><span class="line"><span class="cl">nginx version: nginx/1.22.1
-</span></span></code></pre></div><div id="下载hnet文件--安装" class="anchor"></div>
-<h2 class="relative group">下载HNet文件 &amp; 安装 
+</span></span></code></pre></div><div id="下载-hnet-文件--安装" class="anchor"></div>
+<h2 class="relative group">下载 HNet 文件 &amp; 安装 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%b8%8b%e8%bd%bdhnet%e6%96%87%e4%bb%b6--%e5%ae%89%e8%a3%85" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e4%b8%8b%e8%bd%bd-hnet-%e6%96%87%e4%bb%b6--%e5%ae%89%e8%a3%85" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>详情可参考<a href="https://official.hideip.network/"   target="_blank">
+<p>详情可参考 <a href="https://official.hideip.network/"   target="_blank">
     hideip.network</a> 官方网站</p>
 <div id="下载项目文件" class="anchor"></div>
 <h3 class="relative group">下载项目文件 
@@ -951,16 +951,15 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 安装并初始化</span>
 </span></span><span class="line"><span class="cl">npm install
-</span></span></code></pre></div><div id="配置nginx" class="anchor"></div>
-<h2 class="relative group">配置nginx 
+</span></span></code></pre></div><div id="配置-nginx" class="anchor"></div>
+<h2 class="relative group">配置 Nginx 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e9%85%8d%e7%bd%aenginx" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e9%85%8d%e7%bd%ae-nginx" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>由于HNet项目规定仅允许通过https访问, 且项目默认使用本机等56559端口，所以需使用nginx将本机56559端口反代.</p>
-<p>使用nginx, 让你的域名 abc.def.xyz 可以访问到本机的 127.0.0.1:56559 端口</p>
+<p>由于 HNet 项目规定仅允许通过 https 访问, 且项目默认使用本机的 <code>56559</code> 端口，所以需使用 Nginx 将本机 <code>56559</code> 端口反代, 让你的域名，例如: <code>your.domain.com</code> 可以访问到本机的 <code>127.0.0.1:56559</code> 端口</p>
 <ol>
 <li>
 <p>在目录<code>/etc/nginx/conf.d</code> 创建文件 <code>hnet.conf</code></p>
@@ -971,10 +970,10 @@
 <p>将以下配置内容填入文件中</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">server</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span> <span class="c1"># 如果有其他进程在运行导致443被占用可以修改为任意其他端口, 但记住将防火墙中对应端口打开
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kn">server_name</span> <span class="s">hide.anecho.link</span><span class="p">;</span> <span class="c1"># 填入DNS解析好的域名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kn">server_name</span> <span class="s">your.domain.com</span><span class="p">;</span> <span class="c1"># 填入DNS解析好的域名
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">    <span class="kn">ssl_certificate</span> <span class="s">/root/cert/anecho.link.cer</span><span class="p">;</span> <span class="c1"># ssl证书公钥路径
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kn">ssl_certificate_key</span> <span class="s">/root/cert/anecho.link.key</span><span class="p">;</span> <span class="c1"># ssl证书密钥路径
+</span></span><span class="line"><span class="cl">    <span class="kn">ssl_certificate</span> <span class="s">/path/to/cert</span><span class="p">;</span> <span class="c1"># ssl证书公钥路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kn">ssl_certificate_key</span> <span class="s">/path/to/key</span><span class="p">;</span> <span class="c1"># ssl证书密钥路径
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># proxy_busy_buffers_size  512k;
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1"># proxy_buffers  4 512k;
@@ -992,12 +991,12 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div></li>
 </ol>
-<div id="启动nginx" class="anchor"></div>
-<h2 class="relative group">启动nginx 
+<div id="启动-nginx" class="anchor"></div>
+<h2 class="relative group">启动 Nginx 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e5%90%af%e5%8a%a8nginx" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%90%af%e5%8a%a8-nginx" aria-label="锚点">#</a></span>        
     
 </h2>
 <div id="加载配置" class="anchor"></div>
@@ -1017,23 +1016,23 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 或者</span>
 </span></span><span class="line"><span class="cl">sudo systemctl restart nginx
-</span></span></code></pre></div><div id="安装pm2" class="anchor"></div>
-<h2 class="relative group">安装pm2 
+</span></span></code></pre></div><div id="安装-pm2" class="anchor"></div>
+<h2 class="relative group">安装 pm2 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85pm2" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85-pm2" aria-label="锚点">#</a></span>        
     
 </h2>
-<div id="什么是pm2" class="anchor"></div>
-<h3 class="relative group">什么是pm2 
+<div id="什么是-pm2" class="anchor"></div>
+<h3 class="relative group">什么是 pm2 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%bb%80%e4%b9%88%e6%98%afpm2" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e4%bb%80%e4%b9%88%e6%98%af-pm2" aria-label="锚点">#</a></span>        
     
 </h3>
-<p>PM2是node进程管理工具，可以利用它来简化很多node应用管理的繁琐任务，如性能监控、自动重启、负载均衡等，而且使用非常简单。</p>
+<p>PM2 是 node 进程管理工具，可以利用它来简化很多 node 应用管理的繁琐任务，如性能监控、自动重启、负载均衡等，而且使用非常简单。</p>
 <div id="安装" class="anchor"></div>
 <h3 class="relative group">安装 
     <span
@@ -1050,15 +1049,15 @@
 </span></span></code></pre></div><p>安装完成后使用以下命令查看是否成功安装</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#查看是否正常安装</span>
 </span></span><span class="line"><span class="cl">pm2 --version
-</span></span></code></pre></div><div id="启动hnet并后台运行" class="anchor"></div>
-<h2 class="relative group">启动HNet并后台运行 
+</span></span></code></pre></div><div id="启动-hnet-并后台运行" class="anchor"></div>
+<h2 class="relative group">启动 HNet 并后台运行 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e5%90%af%e5%8a%a8hnet%e5%b9%b6%e5%90%8e%e5%8f%b0%e8%bf%90%e8%a1%8c" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%90%af%e5%8a%a8-hnet-%e5%b9%b6%e5%90%8e%e5%8f%b0%e8%bf%90%e8%a1%8c" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>通过pm2管理hnet在后台运行</p>
+<p>通过 pm2 管理 HNet 在后台运行</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#启动hnet并后台运行</span>
 </span></span><span class="line"><span class="cl">pm2 start index.mjs --name HNet
 </span></span><span class="line"><span class="cl">
@@ -1076,7 +1075,7 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># 使用pm2设置开机自启</span>
 </span></span><span class="line"><span class="cl">pm2 save
 </span></span><span class="line"><span class="cl">pm2 startup
-</span></span></code></pre></div><p>至此应该可以通过 <code>https://你的域名</code> 来访问HNet了.</p>
+</span></span></code></pre></div><p>至此应该可以通过 <code>https://你的域名</code> 来访问 HNet 了.</p>
 
         </div>
                 
@@ -1152,7 +1151,7 @@
   data-app-id="b9e2f6a6-a7fd-4bcd-983a-1fe248205050"
   data-page-id="7f362f101e774cb51980ee457a88e873"
   data-page-url="https://mostima.blog/blog/hnet/"
-  data-page-title="使用 HNet Web(Hideip-network) 搭建网页代理"
+  data-page-title="使用 HNet Web 搭建网页代理"
 ></div>
 <script>
   var myCusdisVariable = window.e;
