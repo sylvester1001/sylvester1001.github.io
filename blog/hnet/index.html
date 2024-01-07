@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点 &middot; Mostima</title>
-  <meta name="title" content="基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点 &middot; Mostima" />
+  <title>使用 HNet Web(Hideip-network) 搭建网页代理 &middot; Mostima</title>
+  <meta name="title" content="使用 HNet Web(Hideip-network) 搭建网页代理 &middot; Mostima" />
   
-  <meta name="description" content="naive proxy establish." />
-  <meta name="keywords" content="NaiveProxy, " />
+  <meta name="description" content="使用 HNet Web 搭建在线网页代理方法." />
+  <meta name="keywords" content="Proxy, HNet, Hideip-network, " />
   
   
-  <link rel="canonical" href="https://mostima.blog/blog/naive-proxy/" />
+  <link rel="canonical" href="https://mostima.blog/blog/hnet/" />
   
   
   
@@ -61,17 +61,17 @@
   
   
   
-  <meta property="og:title" content="基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点" />
-<meta property="og:description" content="naive proxy establish." />
+  <meta property="og:title" content="使用 HNet Web(Hideip-network) 搭建网页代理" />
+<meta property="og:description" content="使用 HNet Web 搭建在线网页代理方法." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostima.blog/blog/naive-proxy/" /><meta property="og:image" content="https://mostima.blog/blog/naive-proxy/featured.png"/><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-11-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-11-12T00:00:00+00:00" />
+<meta property="og:url" content="https://mostima.blog/blog/hnet/" /><meta property="og:image" content="https://mostima.blog/blog/hnet/featured.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-11T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://mostima.blog/blog/naive-proxy/featured.png"/>
-<meta name="twitter:title" content="基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点"/>
-<meta name="twitter:description" content="naive proxy establish."/>
+<meta name="twitter:image" content="https://mostima.blog/blog/hnet/featured.png"/>
+<meta name="twitter:title" content="使用 HNet Web(Hideip-network) 搭建网页代理"/>
+<meta name="twitter:description" content="使用 HNet Web 搭建在线网页代理方法."/>
 
   
   <script type="application/ld+json">
@@ -79,26 +79,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Blog",
-    "name": "基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点",
-    "headline": "基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点",
-    "description": "naive proxy establish.",
-    "abstract": "简介 # 什么是DigitalOcean # DigitalOcean 是一家领先的云基础设施供应商，为开发人员提供一个易于使用、灵活和可扩展的平台，用于部署、管理和扩展应用程序。",
+    "name": "使用 HNet Web(Hideip-network) 搭建网页代理",
+    "headline": "使用 HNet Web(Hideip-network) 搭建网页代理",
+    "description": "使用 HNet Web 搭建在线网页代理方法.",
+    "abstract": "前言 # 本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/mostima.blog\/blog\/naive-proxy\/",
+    "url" : "https:\/\/mostima.blog\/blog\/hnet\/",
     "author" : {
       "@type": "Person",
       "name": "Mostima"
     },
     "copyrightYear": "2023",
-    "dateCreated": "2023-11-12T00:00:00\u002b00:00",
-    "datePublished": "2023-11-12T00:00:00\u002b00:00",
+    "dateCreated": "2023-11-11T00:00:00\u002b00:00",
+    "datePublished": "2023-11-11T00:00:00\u002b00:00",
     
-    "dateModified": "2023-11-12T00:00:00\u002b00:00",
+    "dateModified": "2023-11-11T00:00:00\u002b00:00",
     
-    "keywords": ["NaiveProxy"],
+    "keywords": ["Proxy","HNet","Hideip-network"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "278"
+    "wordCount": "274"
   }]
   </script>
 
@@ -403,7 +403,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点
+      使用 HNet Web(Hideip-network) 搭建网页代理
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -452,9 +452,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-12 00:00:00 &#43;0000 UTC">12 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>278 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-11 00:00:00 &#43;0000 UTC">11 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>274 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_blog/naive-proxy/index.md" title="views">0</span> 
+    <span id="views_blog/hideip-network/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -466,7 +466,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_blog/naive-proxy/index.md" title="likes">0</span> 
+    <span id="likes_blog/hideip-network/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -536,12 +536,34 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/naiveproxy/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/proxy/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    NaiveProxy
+    Proxy
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hnet/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    HNet
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hideip-network/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Hideip-network
   </span>
 </span>
 
@@ -675,30 +697,32 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#简介">简介</a>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#搭建需求">搭建需求</a>
       <ul>
-        <li><a href="#什么是digitalocean">什么是DigitalOcean</a></li>
-        <li><a href="#为什么选择digitalocean">为什么选择DigitalOcean</a></li>
-        <li><a href="#什么是naïveproxy">什么是NaïveProxy</a></li>
+        <li><a href="#基本需求">基本需求</a></li>
+        <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
       </ul>
     </li>
-    <li><a href="#新建服务器">新建服务器</a></li>
-    <li><a href="#ssh登录服务器">SSH登录服务器</a></li>
-    <li><a href="#naive节点搭建">Naive节点搭建</a>
+    <li><a href="#下载hnet文件--安装">下载HNet文件 &amp; 安装</a>
       <ul>
-        <li><a href="#编译安装-caddy-与-naive">编译安装 caddy 与 naive</a>
-          <ul>
-            <li><a href="#go语言环境安装">GO语言环境安装</a></li>
-            <li><a href="#编译安装caddy">编译安装caddy</a></li>
-          </ul>
-        </li>
-        <li><a href="#节点搭建">节点搭建</a>
-          <ul>
-            <li><a href="#naiveproxy-节点搭建">NaiveProxy 节点搭建</a></li>
-          </ul>
-        </li>
+        <li><a href="#下载项目文件">下载项目文件</a></li>
+        <li><a href="#安装项目">安装项目</a></li>
       </ul>
     </li>
+    <li><a href="#配置nginx">配置nginx</a></li>
+    <li><a href="#启动nginx">启动nginx</a>
+      <ul>
+        <li><a href="#加载配置">加载配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装pm2">安装pm2</a>
+      <ul>
+        <li><a href="#什么是pm2">什么是pm2</a></li>
+        <li><a href="#安装">安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#启动hnet并后台运行">启动HNet并后台运行</a></li>
   </ul>
 </nav>
   </div>
@@ -712,30 +736,32 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#简介">简介</a>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#搭建需求">搭建需求</a>
       <ul>
-        <li><a href="#什么是digitalocean">什么是DigitalOcean</a></li>
-        <li><a href="#为什么选择digitalocean">为什么选择DigitalOcean</a></li>
-        <li><a href="#什么是naïveproxy">什么是NaïveProxy</a></li>
+        <li><a href="#基本需求">基本需求</a></li>
+        <li><a href="#环境需求--安装方式">环境需求 &amp; 安装方式</a></li>
       </ul>
     </li>
-    <li><a href="#新建服务器">新建服务器</a></li>
-    <li><a href="#ssh登录服务器">SSH登录服务器</a></li>
-    <li><a href="#naive节点搭建">Naive节点搭建</a>
+    <li><a href="#下载hnet文件--安装">下载HNet文件 &amp; 安装</a>
       <ul>
-        <li><a href="#编译安装-caddy-与-naive">编译安装 caddy 与 naive</a>
-          <ul>
-            <li><a href="#go语言环境安装">GO语言环境安装</a></li>
-            <li><a href="#编译安装caddy">编译安装caddy</a></li>
-          </ul>
-        </li>
-        <li><a href="#节点搭建">节点搭建</a>
-          <ul>
-            <li><a href="#naiveproxy-节点搭建">NaiveProxy 节点搭建</a></li>
-          </ul>
-        </li>
+        <li><a href="#下载项目文件">下载项目文件</a></li>
+        <li><a href="#安装项目">安装项目</a></li>
       </ul>
     </li>
+    <li><a href="#配置nginx">配置nginx</a></li>
+    <li><a href="#启动nginx">启动nginx</a>
+      <ul>
+        <li><a href="#加载配置">加载配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装pm2">安装pm2</a>
+      <ul>
+        <li><a href="#什么是pm2">什么是pm2</a></li>
+        <li><a href="#安装">安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#启动hnet并后台运行">启动HNet并后台运行</a></li>
   </ul>
 </nav>
   </div>
@@ -790,370 +816,66 @@
 
 
         <div class="max-w-prose mb-20">
-          <div id="简介" class="anchor"></div>
-<h2 class="relative group">简介 
+          <div id="前言" class="anchor"></div>
+<h2 class="relative group">前言 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e7%ae%80%e4%bb%8b" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%89%8d%e8%a8%80" aria-label="锚点">#</a></span>        
     
 </h2>
-<div id="什么是digitalocean" class="anchor"></div>
-<h3 class="relative group">什么是DigitalOcean 
+<p>本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。</p>
+<div id="搭建需求" class="anchor"></div>
+<h2 class="relative group">搭建需求 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%bb%80%e4%b9%88%e6%98%afdigitalocean" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e6%90%ad%e5%bb%ba%e9%9c%80%e6%b1%82" aria-label="锚点">#</a></span>        
     
-</h3>
-<p>DigitalOcean 是一家领先的云基础设施供应商，为开发人员提供一个易于使用、灵活和可扩展的平台，用于部署、管理和扩展应用程序。</p>
-<div id="为什么选择digitalocean" class="anchor"></div>
-<h3 class="relative group">为什么选择DigitalOcean 
+</h2>
+<div id="基本需求" class="anchor"></div>
+<h3 class="relative group">基本需求 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%80%89%e6%8b%a9digitalocean" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%9f%ba%e6%9c%ac%e9%9c%80%e6%b1%82" aria-label="锚点">#</a></span>        
     
 </h3>
-<p>选择 DigitalOcean 主要有两个原因：</p>
 <ol>
 <li>
-<p>按小时计费</p>
-<p>按小时计费的平台其实不仅只有 DigitalOcean 一家，类似的还有 Vultr 等大家也可以选择。</p>
+<p>一台境外的服务器</p>
+<p>可从<a href="www.vultr.com"  >
+    Vultr</a>，<a href="www.digitalocean.com"  >
+    DigitalOcean</a> 等云服务器商租用</p>
 </li>
 <li>
-<p>服务器最低价格为$4/月</p>
-<p>由于搭建 NaïveProxy 服务并没有什么配置要求，所以最低配置即可，故最低价月底自然是越好，Vultr 的最低价格是5$/月，没有贵很多，也可以选择</p>
+<p>了解基本的终端命令行知识，例如：<code>cd</code>, <code>ls</code>, <code>systemctl</code> 等</p>
 </li>
 </ol>
-<div id="什么是naïveproxy" class="anchor"></div>
-<h3 class="relative group">什么是NaïveProxy 
+<div id="环境需求--安装方式" class="anchor"></div>
+<h3 class="relative group">环境需求 &amp; 安装方式 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%bb%80%e4%b9%88%e6%98%afna%c3%afveproxy" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e7%8e%af%e5%a2%83%e9%9c%80%e6%b1%82--%e5%ae%89%e8%a3%85%e6%96%b9%e5%bc%8f" aria-label="锚点">#</a></span>        
     
 </h3>
-<p>NaïveProxy是一种安全性较高的协议，其消除了客户端的tls指纹和tls-in-tls特征。NaïveProxy客户端使用chrome浏览器内核作为网络协议栈，从防火墙的角度来看，就像是你在正常的使用正常的谷歌浏览器访问正常的网站</p>
-<hr>
-<div id="新建服务器" class="anchor"></div>
-<h2 class="relative group">新建服务器 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e6%96%b0%e5%bb%ba%e6%9c%8d%e5%8a%a1%e5%99%a8" aria-label="锚点">#</a></span>        
-    
-</h2>
-<ol>
-<li>
-<p>点击Create, 并选择Droplets</p>
-<p>
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/blog/naive-proxy/create.png"
-        alt=""
-      />
-      
-      
-    </figure>
-  
-
-</p>
-</li>
-<li>
-<p>选择服务器的期望所在地</p>
-<p>
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/blog/naive-proxy/location.png"
-        alt=""
-      />
-      
-      
-    </figure>
-  
-
-</p>
-</li>
-<li>
-<p>选择服务器数据中心</p>
-<p>
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/blog/naive-proxy/datacenter.png"
-        alt=""
-      />
-      
-      
-    </figure>
-  
-
-</p>
-</li>
-<li>
-<p>选择系统镜像, 这里我使用的是Debian 12</p>
-<p>
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/blog/naive-proxy/iso.png"
-        alt=""
-      />
-      
-      
-    </figure>
-  
-
-</p>
-</li>
-<li>
-<p>选择需要的配置</p>
-<p>只作为翻墙服务器用途不需要很高的性能, 所以选择最便宜的即可, 如另作他途除外
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/blog/naive-proxy/size.png"
-        alt=""
-      />
-      
-      
-    </figure>
-  
-
-</p>
-</li>
-<li>
-<p>设置登录方式</p>
-<p>可以选择使用SSH密钥登录, 也可以使用密码登录, 此服务器密码为<code>LeaveS1001vps</code></p>
-<p>
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/blog/naive-proxy/loginmethod.png"
-        alt=""
-      />
-      
-      
-    </figure>
-  
-
-</p>
-</li>
-<li>
-<p>创建服务器</p>
-<p>点击<kbd>Create Droplet</kbd>即可</p>
-</li>
-<li>
-<p>服务器创建完成之后, 可以在终端使用ping以下服务器的公网IP, 如果ping通则可以使用, 如下所示如果能收到返回数据, 则说明服务器IP可用</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~
-</span></span><span class="line"><span class="cl">❯ sudo ping 146.190.146.211 -c <span class="m">3</span>
-</span></span><span class="line"><span class="cl">PING 146.190.146.211 <span class="o">(</span>146.190.146.211<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
-</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from 146.190.146.211: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">1</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">47</span> <span class="nv">time</span><span class="o">=</span><span class="m">241</span> ms
-</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from 146.190.146.211: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">2</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">47</span> <span class="nv">time</span><span class="o">=</span><span class="m">240</span> ms
-</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from 146.190.146.211: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">3</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">47</span> <span class="nv">time</span><span class="o">=</span><span class="m">240</span> ms
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">--- 146.190.146.211 ping statistics ---
-</span></span><span class="line"><span class="cl"><span class="m">3</span> packets transmitted, <span class="m">3</span> received, 0% packet loss, <span class="nb">time</span> 2003ms
-</span></span><span class="line"><span class="cl">rtt min/avg/max/mdev <span class="o">=</span> 239.929/240.338/240.841/0.378 ms
-</span></span></code></pre></div><p>如果不通则说明此IP已经被墙, 请将此服务器删掉, 并重复上面步骤1-7</p>
-</li>
-</ol>
-<hr>
-<div id="ssh登录服务器" class="anchor"></div>
-<h2 class="relative group">SSH登录服务器 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#ssh%e7%99%bb%e5%bd%95%e6%9c%8d%e5%8a%a1%e5%99%a8" aria-label="锚点">#</a></span>        
-    
-</h2>
-<p>如果使用用户名+密码的方式登录服务器, 则在终端输入:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh &lt;username&gt;@&lt;ip&gt; -p &lt;port&gt;
-</span></span></code></pre></div><p>新建的服务器<code>&lt;username&gt;</code>一般为<code>root</code>, <code>ip</code>可以在服务器控制面板找到, 端口默认一般为22, 例如:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh root@111.222.333.444 -p <span class="m">22</span>
-</span></span></code></pre></div><p>然后接着输入密码即可, 输入密码时不会显示任何内容, 输入完成后按回车即可.</p>
-<hr>
-<div id="naive节点搭建" class="anchor"></div>
-<h2 class="relative group">Naive节点搭建 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#naive%e8%8a%82%e7%82%b9%e6%90%ad%e5%bb%ba" aria-label="锚点">#</a></span>        
-    
-</h2>
-<div id="编译安装-caddy-与-naive" class="anchor"></div>
-<h3 class="relative group">编译安装 caddy 与 naive 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85-caddy-%e4%b8%8e-naive" aria-label="锚点">#</a></span>        
-    
-</h3>
-<div id="go语言环境安装" class="anchor"></div>
-<h4 class="relative group">GO语言环境安装 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#go%e8%af%ad%e8%a8%80%e7%8e%af%e5%a2%83%e5%ae%89%e8%a3%85" aria-label="锚点">#</a></span>        
-    
-</h4>
-<p>由于caddy由go语言编写, 所以需要先安装go语言环境, 可以通过包管理器安装, 或者通过下载官方二进制包安装.</p>
+<p>我的服务器使用Arch Linux，故我将使用Arch Linux的包管理器安装。如果你使用的是别的Linux发行版（如Debian，Ubuntu）等，请自行查看包管理器安装命令。</p>
 <ul>
 <li>
-<p>包管理器安装</p>
-<pre tabindex="0"><code>apt install golang-go
-</code></pre><p>但apt包管理器安装的go语言环境<strong>较老旧</strong>, 可能会在编译caddy时出现错误, 推荐第二种方法, 手动安装</p>
-</li>
-<li>
-<p>使用官方二进制包安装GO</p>
-<ol>
-<li>
-<p>使用wget下载最新的tarball文件, 本文撰写时GO的最新版本为 v1.21.3</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://go.dev/dl/go1.21.3.linux-amd64.tar.gz
+<p>node</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S nodejs
 </span></span></code></pre></div></li>
 <li>
-<p>解压文件并将其移至<code>/usr/local</code>目录</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo tar -C /usr/local -xzf go.1.21.3.linux-amd64.tar.gz
-</span></span></code></pre></div><p><code>-C</code> 选项为解压文件到<code>/usr/local</code>目录</p>
-</li>
-<li>
-<p>将GO二进制文件添加到PATH中</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim ~/.bashrc <span class="c1">#打开.bashrc文件</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">vim ~/.zshrc <span class="c1">#如果使用zsh则打开.zshrc</span>
-</span></span></code></pre></div><p>写入如下行</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/usr/local/go/bin
-</span></span></code></pre></div><p>按ESC, 然后键入<code>:wq</code>保存退出</p>
-</li>
-<li>
-<p>重载<code>.bashrc</code>文件或<code>.zshrc</code>文件</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/.bashrc <span class="c1">#使用bash时</span>
-</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.zshrc <span class="c1">#使用zsh时</span>
+<p>npm</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S npm
 </span></span></code></pre></div></li>
 <li>
-<p>查看GO版本</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go version
-</span></span></code></pre></div><p>如果出现如下内容则表示安装成功</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@US-SF-2:~# ls
-</span></span><span class="line"><span class="cl">Caddyfile  caddy  go
+<p>nginx</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S nginx
 </span></span></code></pre></div></li>
-</ol>
-</li>
 </ul>
-<div id="编译安装caddy" class="anchor"></div>
-<h4 class="relative group">编译安装caddy 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85caddy" aria-label="锚点">#</a></span>        
-    
-</h4>
-<ol>
-<li>
-<p>下载编译caddy所需要的文件</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
-</span></span></code></pre></div></li>
-<li>
-<p>编译携带naive插件的caddy</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~/go/bin/xcaddy build --with github.com/caddyserver/forwardproxy@caddy2<span class="o">=</span>github.com/klzgrad/forwardproxy@naive
-</span></span></code></pre></div></li>
-<li>
-<p>编译完成后, 输入<code>ls</code>, 可以在当前目录看到如下所示, 一个名为<code>caddy</code>的可执行文件, 表示编译成功</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@US-SF-2:~# ls
-</span></span><span class="line"><span class="cl">Caddyfile  caddy  go
-</span></span></code></pre></div></li>
-</ol>
-<div id="节点搭建" class="anchor"></div>
-<h3 class="relative group">节点搭建 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e8%8a%82%e7%82%b9%e6%90%ad%e5%bb%ba" aria-label="锚点">#</a></span>        
-    
-</h3>
-<div id="naiveproxy-节点搭建" class="anchor"></div>
-<h4 class="relative group">NaiveProxy 节点搭建 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#naiveproxy-%e8%8a%82%e7%82%b9%e6%90%ad%e5%bb%ba" aria-label="锚点">#</a></span>        
-    
-</h4>
-<div id="配置caddyfile" class="anchor"></div>
-<h5 class="relative group">配置Caddyfile 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e9%85%8d%e7%bd%aecaddyfile" aria-label="锚点">#</a></span>        
-    
-</h5>
-<ol>
-<li>创建文件名为<code>Caddyfile</code>的文件</li>
-</ol>
+<p>安装完成后, 使用以下命令查看是否有效,</p>
 
   
 
@@ -1182,55 +904,179 @@
   <span
     
       class="dark:text-neutral-300"
-    ><strong>注意</strong> 大小写需要完全相同</span>
+    ><strong>注意:</strong> node版本需要v16及以上, 如果apt 安装的版本低于v16, 建议手动安装</span>
 </div>
 
-<ol start="2">
-<li>
-<p>写入文件配置</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">:443, your.domain.com #你的域名</span>
-</span></span><span class="line"><span class="cl"><span class="na">tls your@mail.com #你的邮箱</span>
-</span></span><span class="line"><span class="cl"><span class="na">route {</span>
-</span></span><span class="line"><span class="cl"> <span class="na">forward_proxy {</span>
-</span></span><span class="line"><span class="cl">   <span class="na">basic_auth user pass #用户名和密码</span>
-</span></span><span class="line"><span class="cl">   <span class="na">hide_ip</span>
-</span></span><span class="line"><span class="cl">   <span class="na">hide_via</span>
-</span></span><span class="line"><span class="cl">   <span class="na">probe_resistance</span>
-</span></span><span class="line"><span class="cl">  <span class="na">}</span>
-</span></span><span class="line"><span class="cl"> <span class="c1">#支持多用户</span>
-</span></span><span class="line"><span class="cl"> <span class="na">forward_proxy {</span>
-</span></span><span class="line"><span class="cl">   <span class="na">basic_auth user2 pass2 #用户名和密码</span>
-</span></span><span class="line"><span class="cl">   <span class="na">hide_ip</span>
-</span></span><span class="line"><span class="cl">   <span class="na">hide_via</span>
-</span></span><span class="line"><span class="cl">   <span class="na">probe_resistance</span>
-</span></span><span class="line"><span class="cl">  <span class="na">}</span>
-</span></span><span class="line"><span class="cl"> <span class="na">reverse_proxy  https://demo.cloudreve.org  { #伪装网址</span>
-</span></span><span class="line"><span class="cl">   <span class="na">header_up  Host  {upstream_hostport}</span>
-</span></span><span class="line"><span class="cl">   <span class="na">header_up  X-Forwarded-Host  {host}</span>
-</span></span><span class="line"><span class="cl">  <span class="na">}</span>
-</span></span><span class="line"><span class="cl"><span class="na">}</span>
-</span></span></code></pre></div></li>
-</ol>
-<div id="运行caddy" class="anchor"></div>
-<h5 class="relative group">运行caddy 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看安装是否有效</span>
+</span></span><span class="line"><span class="cl">node --version
+</span></span><span class="line"><span class="cl">npm --version
+</span></span><span class="line"><span class="cl">nginx -v
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果显示如下内容则表示有效</span>
+</span></span><span class="line"><span class="cl">root@SF-Naive-1:~# node --version
+</span></span><span class="line"><span class="cl">v18.13.0
+</span></span><span class="line"><span class="cl">root@SF-Naive-1:~# npm --version
+</span></span><span class="line"><span class="cl">9.2.0
+</span></span><span class="line"><span class="cl">root@SF-Naive-1:~# nginx -v
+</span></span><span class="line"><span class="cl">nginx version: nginx/1.22.1
+</span></span></code></pre></div><div id="下载hnet文件--安装" class="anchor"></div>
+<h2 class="relative group">下载HNet文件 &amp; 安装 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e8%bf%90%e8%a1%8ccaddy" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e4%b8%8b%e8%bd%bdhnet%e6%96%87%e4%bb%b6--%e5%ae%89%e8%a3%85" aria-label="锚点">#</a></span>        
     
-</h5>
-<ul>
+</h2>
+<p>详情可参考<a href="https://official.hideip.network/"   target="_blank">
+    hideip.network</a> 官方网站</p>
+<div id="下载项目文件" class="anchor"></div>
+<h3 class="relative group">下载项目文件 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%b8%8b%e8%bd%bd%e9%a1%b9%e7%9b%ae%e6%96%87%e4%bb%b6" aria-label="锚点">#</a></span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone -b v3 https://github.com/Hideipnetwork/hideipnetwork-web.git
+</span></span></code></pre></div><div id="安装项目" class="anchor"></div>
+<h3 class="relative group">安装项目 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85%e9%a1%b9%e7%9b%ae" aria-label="锚点">#</a></span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 进入目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> hideipnetwork-web
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 安装并初始化</span>
+</span></span><span class="line"><span class="cl">npm install
+</span></span></code></pre></div><div id="配置nginx" class="anchor"></div>
+<h2 class="relative group">配置nginx 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e9%85%8d%e7%bd%aenginx" aria-label="锚点">#</a></span>        
+    
+</h2>
+<p>由于HNet项目规定仅允许通过https访问, 且项目默认使用本机等56559端口，所以需使用nginx将本机56559端口反代.</p>
+<p>使用nginx, 让你的域名 abc.def.xyz 可以访问到本机的 127.0.0.1:56559 端口</p>
+<ol>
 <li>
-<p>前台运行, 断开与vps连接后进程终端</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./caddy run
-</span></span></code></pre></div><p>我一般在不确定是否自己配置完全无误时用来查看caddy运行输出信息时使用</p>
-</li>
+<p>在目录<code>/etc/nginx/conf.d</code> 创建文件 <code>hnet.conf</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#创建文件</span>
+</span></span><span class="line"><span class="cl">vim /etc/nginx/conf.d/hnet.conf
+</span></span></code></pre></div></li>
 <li>
-<p>后台运行</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./caddy start
-</span></span></code></pre></div><p>如可以确保配置文件无误时直接使用后台启动</p>
-</li>
-</ul>
+<p>将以下配置内容填入文件中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">server</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span> <span class="c1"># 如果有其他进程在运行导致443被占用可以修改为任意其他端口, 但记住将防火墙中对应端口打开
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kn">server_name</span> <span class="s">hide.anecho.link</span><span class="p">;</span> <span class="c1"># 填入DNS解析好的域名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="kn">ssl_certificate</span> <span class="s">/root/cert/anecho.link.cer</span><span class="p">;</span> <span class="c1"># ssl证书公钥路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kn">ssl_certificate_key</span> <span class="s">/root/cert/anecho.link.key</span><span class="p">;</span> <span class="c1"># ssl证书密钥路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># proxy_busy_buffers_size  512k;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1"># proxy_buffers  4 512k;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1"># proxy_buffer_size  256k;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kn">proxy_pass</span> <span class="s">http://127.0.0.1:56559</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">proxy_http_version</span> <span class="mi">1</span><span class="s">.1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">proxy_set_header</span> <span class="s">Upgrade</span> <span class="nv">$http_upgrade</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">proxy_set_header</span> <span class="s">Connection</span> <span class="s">&#39;Upgrade&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Host</span> <span class="nv">$host:$server_port</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Server</span> <span class="nv">$host</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$host</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+</ol>
+<div id="启动nginx" class="anchor"></div>
+<h2 class="relative group">启动nginx 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%90%af%e5%8a%a8nginx" aria-label="锚点">#</a></span>        
+    
+</h2>
+<div id="加载配置" class="anchor"></div>
+<h3 class="relative group">加载配置 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%8a%a0%e8%bd%bd%e9%85%8d%e7%bd%ae" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>首先需要将之前写入的配置文件重新加载</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 加载上方填入的配置</span>
+</span></span><span class="line"><span class="cl">sudo systemctl reload nginx
+</span></span></code></pre></div><p>然后启动nginx服务</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 启动nginx</span>
+</span></span><span class="line"><span class="cl">sudo systemctl start nginx
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者</span>
+</span></span><span class="line"><span class="cl">sudo systemctl restart nginx
+</span></span></code></pre></div><div id="安装pm2" class="anchor"></div>
+<h2 class="relative group">安装pm2 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85pm2" aria-label="锚点">#</a></span>        
+    
+</h2>
+<div id="什么是pm2" class="anchor"></div>
+<h3 class="relative group">什么是pm2 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%bb%80%e4%b9%88%e6%98%afpm2" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>PM2是node进程管理工具，可以利用它来简化很多node应用管理的繁琐任务，如性能监控、自动重启、负载均衡等，而且使用非常简单。</p>
+<div id="安装" class="anchor"></div>
+<h3 class="relative group">安装 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%ae%89%e8%a3%85" aria-label="锚点">#</a></span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 进入项目目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /root/hideipnetwork-web
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#安装pm2</span>
+</span></span><span class="line"><span class="cl">npm i pm2 -g
+</span></span></code></pre></div><p>安装完成后使用以下命令查看是否成功安装</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#查看是否正常安装</span>
+</span></span><span class="line"><span class="cl">pm2 --version
+</span></span></code></pre></div><div id="启动hnet并后台运行" class="anchor"></div>
+<h2 class="relative group">启动HNet并后台运行 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%90%af%e5%8a%a8hnet%e5%b9%b6%e5%90%8e%e5%8f%b0%e8%bf%90%e8%a1%8c" aria-label="锚点">#</a></span>        
+    
+</h2>
+<p>通过pm2管理hnet在后台运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#启动hnet并后台运行</span>
+</span></span><span class="line"><span class="cl">pm2 start index.mjs --name HNet
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看是否正常启动</span>
+</span></span><span class="line"><span class="cl">pm2 status
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果返回内容如下则表示正常启动</span>
+</span></span><span class="line"><span class="cl">root@SF04:~/hideipnetwork-web# pm2 status
+</span></span><span class="line"><span class="cl">┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+</span></span><span class="line"><span class="cl">│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+</span></span><span class="line"><span class="cl">├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+</span></span><span class="line"><span class="cl">│ <span class="m">0</span>  │ HNet               │ fork     │ <span class="m">0</span>    │ online    │ 0%       │ 87.2mb   │
+</span></span><span class="line"><span class="cl">└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用pm2设置开机自启</span>
+</span></span><span class="line"><span class="cl">pm2 save
+</span></span><span class="line"><span class="cl">pm2 startup
+</span></span></code></pre></div><p>至此应该可以通过 <code>https://你的域名</code> 来访问HNet了.</p>
 
         </div>
                 
@@ -1242,8 +1088,8 @@
       </div>
      
      <script>
-        var oid = "views_blog\/naive-proxy\/index.md"
-        var oid_likes = "likes_blog\/naive-proxy\/index.md"
+        var oid = "views_blog\/hideip-network\/index.md"
+        var oid_likes = "likes_blog\/hideip-network\/index.md"
       </script>
       
       
@@ -1265,7 +1111,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/blog/hugo-github-pages-blog/">
+            <a class="flex group mr-3" href="/blog/naive-proxy/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1277,11 +1123,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >使用 Hugo + GitHub Pages 搭建个人博客</span
+                  >基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-11-14 00:00:00 &#43;0000 UTC">14 November 2023</time>
+                    <time datetime="2023-11-12 00:00:00 &#43;0000 UTC">12 November 2023</time>
                   
                 </span>
               </span>
@@ -1289,28 +1135,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/blog/hnet/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >使用 HNet Web(Hideip-network) 搭建网页代理</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-11-11 00:00:00 &#43;0000 UTC">11 November 2023</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
@@ -1326,9 +1150,9 @@
         <div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="b9e2f6a6-a7fd-4bcd-983a-1fe248205050"
-  data-page-id="523ad5d672c52b8157108187615e18c4"
-  data-page-url="https://mostima.blog/blog/naive-proxy/"
-  data-page-title="基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点"
+  data-page-id="7f362f101e774cb51980ee457a88e873"
+  data-page-url="https://mostima.blog/blog/hnet/"
+  data-page-title="使用 HNet Web(Hideip-network) 搭建网页代理"
 ></div>
 <script>
   var myCusdisVariable = window.e;
