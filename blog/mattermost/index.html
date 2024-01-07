@@ -82,7 +82,7 @@
     "name": "基于 Docker 部署 Mattermost",
     "headline": "基于 Docker 部署 Mattermost",
     "description": "基于 Docker 部署 Mattermost.",
-    "abstract": "本文记录如何使用 Docker 私有化部署可于生产环境中使用的Mattermost的方法.",
+    "abstract": "本文记录如何使用 Docker 私有化部署可于生产环境中使用的 Mattermost 的方法.",
     "inLanguage": "zh-cn",
     "url" : "https:\/\/mostima.blog\/blog\/mattermost\/",
     "author" : {
@@ -98,7 +98,7 @@
     "keywords": ["Mattermost","Docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "367"
+    "wordCount": "377"
   }]
   </script>
 
@@ -452,7 +452,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-06 00:00:00 &#43;0000 UTC">6 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>367 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2024-01-06 00:00:00 &#43;0000 UTC">6 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>377 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/deploy-mattermost/index.md" title="views">0</span> 
     
@@ -777,7 +777,7 @@
 
 
         <div class="max-w-prose mb-20">
-          <p>本文记录如何使用 Docker 私有化部署可于生产环境中使用的Mattermost的方法.</p>
+          <p>本文记录如何使用 Docker 私有化部署可于生产环境中使用的 Mattermost 的方法.</p>
 <div id="mattermost-介绍" class="anchor"></div>
 <h2 class="relative group">Mattermost 介绍 
     <span
@@ -944,7 +944,7 @@ TriggeredBy: ● docker.socket
 </span></span></code></pre></div></li>
 <li>
 <p>创建 <code>.env</code> 文件</p>
-<p>在 <code>docer</code> 目录下, 存在于一个默认文件, 名字为 <code>env.example</code>, 将其 copy 为我们的 <code>.env</code> 文件</p>
+<p>在 <code>docker</code> 目录下, 存在于一个默认文件, 名字为 <code>env.example</code>, 将其 copy 为我们的 <code>.env</code> 文件</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp env.example .env
 </span></span></code></pre></div></li>
 <li>
@@ -1019,6 +1019,7 @@ TriggeredBy: ● docker.socket
             style="text-decoration-line: none !important;" href="#%e9%85%8d%e7%bd%ae%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86" aria-label="锚点">#</a></span>        
     
 </h3>
+<p>由于使用 http 为明文传输，并不安全，所以建议使用 https 来访问你刚才搭建好的服务。</p>
 <ol>
 <li>
 <p>安装 Nginx</p>
@@ -1073,8 +1074,10 @@ TriggeredBy: ● docker.socket
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 或 重启 nginx</span>
 </span></span><span class="line"><span class="cl">sudo systemctl restart nginx
-</span></span></code></pre></div></li>
+</span></span></code></pre></div><p>此时应该可以使用 <code>https://&lt;你的域名&gt;</code> 来访问你的Mattermost了</p>
+</li>
 </ol>
+<hr>
 
         </div>
                 
