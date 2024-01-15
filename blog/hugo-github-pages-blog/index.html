@@ -98,7 +98,7 @@
     "keywords": ["Blog","Hugo","GitHub Pages","Cusdis"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "689"
+    "wordCount": "547"
   }]
   </script>
 
@@ -452,7 +452,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-14 00:00:00 &#43;0000 UTC">14 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>689 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-14 00:00:00 &#43;0000 UTC">14 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>547 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/blog-hugo-githubpages/index.md" title="views">0</span> 
     
@@ -1615,14 +1615,188 @@
     Firebase 官网</a>免费注册一个账号</p>
 </li>
 <li>
-<p>新建一个项目</p>
+<p>选择「添加项目」，输入项目名</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase1.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase2.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
 </li>
 <li>
-<p>选择 analytics location</p>
+<p>开启「为此项目启用 Google Analytics」</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase3.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
 </li>
 <li>
-<p>在 <code>config/_default/params.toml</code> 文件中配置变量</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">firebase</span><span class="p">]</span>
+<p>选择默认账号即可</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase4.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>进入项目主页后选择 <kbd>&lt;/&gt;</kbd></p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase6.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>输入你的应用名</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase7.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>选择「使用 <script> 标记」， 并记录下 config 数据，如黄框所示</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase8.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>在 <code>config/_default/params.toml</code> 文件中将上一步中的配置变量覆盖原配置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># 实例，请替换为自己的数据</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">firebase</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">apiKey</span><span class="err">:</span> <span class="s2">&#34;AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">authDomain</span><span class="err">:</span> <span class="s2">&#34;blowfish-21fff.firebaseapp.com&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">projectId</span><span class="err">:</span> <span class="s2">&#34;blowfish-21fff&#34;</span><span class="p">,</span>
@@ -1632,25 +1806,192 @@
 </span></span><span class="line"><span class="cl">  <span class="nx">measurementId</span><span class="err">:</span> <span class="s2">&#34;G-PEDMYR1V0K&#34;</span>
 </span></span></code></pre></div></li>
 <li>
-<p>配置 Firestore</p>
+<p>配置 Authentication</p>
 <ol>
 <li>
-<p>在侧栏中选择 Build</p>
+<p>在「项目首页」或「侧边栏」中选择 Authentication</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase9.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
 </li>
 <li>
-<p>打开 Firestore</p>
+<p>选择 <kbd>开始</kbd></p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase10.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
 </li>
 <li>
-<p>新建一个 database</p>
+<p>选择 「匿名」</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase11.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
 </li>
 <li>
-<p>选择生产模式</p>
+<p>启用匿名，并保存</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase12.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
 </li>
 <li>
-<p>选择 location, 然后等待完成</p>
+<p>点击侧边栏， 选择「Firestore Database」，并点击<kbd>创建数据库</kbd></p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase13.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
 </li>
 <li>
-<p>完成后, 将以下内容粘贴进输入框中</p>
+<p>选择距离你为止较近的「位置」</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase14.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>选择「以生产模式开始」，并点击<kbd>创建</kbd></p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/hugo-github-pages-blog/firebase15.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>完成后，修改规则， 将以下内容粘贴进输入框中</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">rules_version</span> <span class="err">=</span> <span class="err">&#39;</span><span class="mi">2</span><span class="err">&#39;;</span>
 </span></span><span class="line"><span class="cl"><span class="err">service</span> <span class="err">cloud.firestore</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="err">match</span> <span class="err">/databases/{database</span><span class="p">}</span><span class="err">/documents</span> <span class="p">{</span>
