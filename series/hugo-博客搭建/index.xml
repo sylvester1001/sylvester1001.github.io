@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo 博客搭建 on Mostima</title>
+    <link>https://mostima.blog/series/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <description>Recent content in Hugo 博客搭建 on Mostima</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Mostima</copyright>
+    <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/series/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 博客中 Firebase 配置方法</title>
+      <link>https://mostima.blog/blog/firebase-hugo-blog/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/firebase-hugo-blog/</guid>
+      <description>简介 # Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/firebase-hugo-blog/featured.png" />
+    </item>
+    
+    <item>
+      <title>使用 Hugo &#43; GitHub Pages 搭建个人博客</title>
+      <link>https://mostima.blog/blog/hugo-github-pages-blog/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/hugo-github-pages-blog/</guid>
+      <description>简介 # 在博客搭建完成之后，我意识到，建站对我来说是一个极低频的工作，除非以后需要更换新的部署方案，否则只有极小的可能性对网站进行大的变动，为了避免我忘记，也为了给有需要的人提供一些力所能及的帮助，故写下此文，如果有错误或误导的内容，请不吝在文末留言，或者邮件联系我～那么就开始吧</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hugo-github-pages-blog/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
