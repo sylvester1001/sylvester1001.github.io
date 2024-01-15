@@ -100,7 +100,7 @@
     "keywords": ["Blog","Hugo","GitHub Pages","Cusdis"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "689"
+    "wordCount": "612"
   }]
   </script>
 
@@ -454,7 +454,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-14 00:00:00 &#43;0000 UTC">14 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>689 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-14 00:00:00 &#43;0000 UTC">14 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>612 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/blog-hugo-githubpages/index.md" title="views">0</span> 
     
@@ -744,9 +744,9 @@
             <li><a href="#可选配置">*可选配置</a></li>
           </ul>
         </li>
-        <li><a href="#firebase">Firebase</a></li>
       </ul>
     </li>
+    <li><a href="#firebase">Firebase</a></li>
     <li><a href="#cusdis-评论系统">Cusdis 评论系统</a>
       <ul>
         <li><a href="#配置方法">配置方法</a></li>
@@ -799,9 +799,9 @@
             <li><a href="#可选配置">*可选配置</a></li>
           </ul>
         </li>
-        <li><a href="#firebase">Firebase</a></li>
       </ul>
     </li>
+    <li><a href="#firebase">Firebase</a></li>
     <li><a href="#cusdis-评论系统">Cusdis 评论系统</a>
       <ul>
         <li><a href="#配置方法">配置方法</a></li>
@@ -877,7 +877,7 @@
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="https://mostima.blog/blog/firebase-hugo-blog/">
-            Part 2: Hugo 博客中 Firebase 配置方法
+            Part 2: Hugo 博客中配置 Firebase 的方法
         </a>
     </div>
     
@@ -1629,80 +1629,16 @@
 </ol>
 <hr>
 <div id="firebase" class="anchor"></div>
-<h3 class="relative group">Firebase 
+<h2 class="relative group">Firebase 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
             style="text-decoration-line: none !important;" href="#firebase" aria-label="锚点">#</a></span>        
     
-</h3>
-<p>Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据.</p>
-<p>使用方式如下:</p>
-<ol>
-<li>
-<p>在 <a href="https://firebase.google.com/"   target="_blank">
-    Firebase 官网</a>免费注册一个账号</p>
-</li>
-<li>
-<p>新建一个项目</p>
-</li>
-<li>
-<p>选择 analytics location</p>
-</li>
-<li>
-<p>在 <code>config/_default/params.toml</code> 文件中配置变量</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">firebase</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">apiKey</span><span class="err">:</span> <span class="s2">&#34;AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">authDomain</span><span class="err">:</span> <span class="s2">&#34;blowfish-21fff.firebaseapp.com&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">projectId</span><span class="err">:</span> <span class="s2">&#34;blowfish-21fff&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">storageBucket</span><span class="err">:</span> <span class="s2">&#34;blowfish-21fff.appspot.com&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">messagingSenderId</span><span class="err">:</span> <span class="s2">&#34;60108104191&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">appId</span><span class="err">:</span> <span class="s2">&#34;1:60108104191:web:039842ebe1370698b487ca&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">measurementId</span><span class="err">:</span> <span class="s2">&#34;G-PEDMYR1V0K&#34;</span>
-</span></span></code></pre></div></li>
-<li>
-<p>配置 Firestore</p>
-<ol>
-<li>
-<p>在侧栏中选择 Build</p>
-</li>
-<li>
-<p>打开 Firestore</p>
-</li>
-<li>
-<p>新建一个 database</p>
-</li>
-<li>
-<p>选择生产模式</p>
-</li>
-<li>
-<p>选择 location, 然后等待完成</p>
-</li>
-<li>
-<p>完成后, 将以下内容粘贴进输入框中</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">rules_version</span> <span class="err">=</span> <span class="err">&#39;</span><span class="mi">2</span><span class="err">&#39;;</span>
-</span></span><span class="line"><span class="cl"><span class="err">service</span> <span class="err">cloud.firestore</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="err">match</span> <span class="err">/databases/{database</span><span class="p">}</span><span class="err">/documents</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="err">match</span> <span class="err">/{document=**</span><span class="p">}</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="err">allow</span> <span class="err">read,</span> <span class="err">write:</span> <span class="err">if</span> <span class="err">request.auth</span> <span class="err">!=</span> <span class="err">null;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="err">}</span>
-</span></span><span class="line"><span class="cl"><span class="err">}</span>
-</span></span></code></pre></div></li>
-<li>
-<p>启用匿名授权</p>
-<ul>
-<li>选择 [Build]</li>
-<li>打开 [Authentication]</li>
-<li>选择 [Get started]</li>
-<li>单机 [Anonymous], 并将其打开</li>
-<li>保存</li>
-</ul>
-</li>
-</ol>
-<p>如果你之前已经将 <code>showViews</code> 和 <code>showLikes</code> 设置为 <code>true</code> 的话, 现在阅读量和点赞量应该可以正常显示了.</p>
-</li>
-</ol>
+</h2>
+<p>Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据，来显示阅读量与点赞数.</p>
+<p>由于内容长度较长，故写在了单独的一篇博文中。请参考<a href="https://mostima.blog/blog/firebase-hugo-blog/"   target="_blank">
+    Hugo 博客中配置 Firebase 的方法</a>.</p>
 <hr>
 <div id="cusdis-评论系统" class="anchor"></div>
 <h2 class="relative group">Cusdis 评论系统 
@@ -1808,7 +1744,7 @@
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="https://mostima.blog/blog/firebase-hugo-blog/">
-            Part 2: Hugo 博客中 Firebase 配置方法
+            Part 2: Hugo 博客中配置 Firebase 的方法
         </a>
     </div>
     
