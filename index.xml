@@ -14,7 +14,7 @@
       <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/firebase-hugo-blog/</guid>
-      <description>简介 # Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据.</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/firebase-hugo-blog/featured.png" />
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/mattermost/</guid>
-      <description>本文记录如何使用 Docker 私有化部署可于生产环境中使用的 Mattermost 的方法.</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/mattermost/featured.png" />
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/xrdp-arch-linux/</guid>
-      <description>前言 # 由于做 CAD 的缘故, 公司使用 Cadence Virtuoso 等 EDA 软件仅支持在 Linux 环境中运行, 再加之平时喜欢折腾, 在 Windows 或者 macOS 中使用虚拟机总没有一台宿主机来的舒坦 (其实就是想买电脑了).</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/xrdp-arch-linux/featured.png" />
     </item>
     
@@ -44,7 +44,7 @@
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/mind-wandering/</guid>
-      <description>时光匆匆，工作马上一年了。</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/mind-wandering/featured.jpg" />
     </item>
     
@@ -54,7 +54,7 @@
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/hugo-github-pages-blog/</guid>
-      <description>简介 # 在博客搭建完成之后，我意识到，建站对我来说是一个极低频的工作，除非以后需要更换新的部署方案，否则只有极小的可能性对网站进行大的变动，为了避免我忘记，也为了给有需要的人提供一些力所能及的帮助，故写下此文，如果有错误或误导的内容，请不吝在文末留言，或者邮件联系我～那么就开始吧</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hugo-github-pages-blog/featured.png" />
     </item>
     
@@ -64,7 +64,7 @@
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/naive-proxy/</guid>
-      <description>简介 # 什么是DigitalOcean # DigitalOcean 是一家领先的云基础设施供应商，为开发人员提供一个易于使用、灵活和可扩展的平台，用于部署、管理和扩展应用程序。</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/naive-proxy/featured.png" />
     </item>
     
@@ -74,7 +74,7 @@
       <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/blog/hnet/</guid>
-      <description>前言 # 本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启 VPN，适用于禁止使用 VPN，或不便留下痕迹的情况。</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hnet/featured.png" />
     </item>
     
