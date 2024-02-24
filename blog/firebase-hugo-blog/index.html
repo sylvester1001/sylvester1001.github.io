@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="true"><head>
   <meta charset="utf-8" />
   
@@ -185,7 +185,7 @@
   
   <div class="min-h-[148px]"></div>
 <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
-  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
   <div class="relative max-w-[64rem] ml-auto mr-auto">
     <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
@@ -381,6 +381,16 @@
 
 
 
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
 
 
   </div>
@@ -594,8 +604,10 @@
   
   
   
+  
+  
   <img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width="96" height="96"
-    alt="Mostima" src="/img/IMG_7549.JPG" />
+    alt="Mostima" src="/img/IMG_7549_huaf5bbe7df715f343e12cab5b28f86c57_448422_192x192_fill_q75_box_center.JPG" />
   
   
   <div class="place-self-center">
@@ -835,7 +847,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase1.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase1_hua252d8173b32c2d342f38666504f265c_1153980_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase1_hua252d8173b32c2d342f38666504f265c_1153980_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase1_hua252d8173b32c2d342f38666504f265c_1153980_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase1_hua252d8173b32c2d342f38666504f265c_1153980_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase1_hua252d8173b32c2d342f38666504f265c_1153980_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -858,7 +875,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase2.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase2_hu8b1cb50a5473e83f13329418f42e0c5c_109706_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase2_hu8b1cb50a5473e83f13329418f42e0c5c_109706_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase2_hu8b1cb50a5473e83f13329418f42e0c5c_109706_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase2_hu8b1cb50a5473e83f13329418f42e0c5c_109706_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase2_hu8b1cb50a5473e83f13329418f42e0c5c_109706_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -884,7 +906,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase3.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase3_hu8441ab3a1ab0788bb7fe6c74b8f928e5_278558_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase3_hu8441ab3a1ab0788bb7fe6c74b8f928e5_278558_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase3_hu8441ab3a1ab0788bb7fe6c74b8f928e5_278558_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase3_hu8441ab3a1ab0788bb7fe6c74b8f928e5_278558_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase3_hu8441ab3a1ab0788bb7fe6c74b8f928e5_278558_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -910,7 +937,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase4.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase4_hu7e9cbdc8d0f19e37bb08aad64e7890d1_218146_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase4_hu7e9cbdc8d0f19e37bb08aad64e7890d1_218146_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase4_hu7e9cbdc8d0f19e37bb08aad64e7890d1_218146_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase4_hu7e9cbdc8d0f19e37bb08aad64e7890d1_218146_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase4_hu7e9cbdc8d0f19e37bb08aad64e7890d1_218146_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -936,7 +968,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase6.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase6_hu59fe3419d675e05bcc4bad1f54d2f201_404434_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase6_hu59fe3419d675e05bcc4bad1f54d2f201_404434_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase6_hu59fe3419d675e05bcc4bad1f54d2f201_404434_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase6_hu59fe3419d675e05bcc4bad1f54d2f201_404434_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase6_hu59fe3419d675e05bcc4bad1f54d2f201_404434_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -962,7 +999,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase7.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase7_hu3d629cf5f6a2c62b62d9bc4a84b0e752_128264_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase7_hu3d629cf5f6a2c62b62d9bc4a84b0e752_128264_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase7_hu3d629cf5f6a2c62b62d9bc4a84b0e752_128264_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase7_hu3d629cf5f6a2c62b62d9bc4a84b0e752_128264_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase7_hu3d629cf5f6a2c62b62d9bc4a84b0e752_128264_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -988,7 +1030,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase8.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase8_hu0083fcfa0f36bb58774cbe68ea0b27b1_416043_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase8_hu0083fcfa0f36bb58774cbe68ea0b27b1_416043_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase8_hu0083fcfa0f36bb58774cbe68ea0b27b1_416043_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase8_hu0083fcfa0f36bb58774cbe68ea0b27b1_416043_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase8_hu0083fcfa0f36bb58774cbe68ea0b27b1_416043_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -1029,7 +1076,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase9.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase9_hu9af559a1d104294b4892d28fa52c7e70_875222_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase9_hu9af559a1d104294b4892d28fa52c7e70_875222_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase9_hu9af559a1d104294b4892d28fa52c7e70_875222_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase9_hu9af559a1d104294b4892d28fa52c7e70_875222_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase9_hu9af559a1d104294b4892d28fa52c7e70_875222_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -1055,7 +1107,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase10.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase10_hud024c30503829d14384cac1fc7cab7b6_418343_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase10_hud024c30503829d14384cac1fc7cab7b6_418343_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase10_hud024c30503829d14384cac1fc7cab7b6_418343_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase10_hud024c30503829d14384cac1fc7cab7b6_418343_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase10_hud024c30503829d14384cac1fc7cab7b6_418343_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -1081,7 +1138,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase11.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase11_huf4013c169c212042bb3861bea4122226_230356_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase11_huf4013c169c212042bb3861bea4122226_230356_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase11_huf4013c169c212042bb3861bea4122226_230356_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase11_huf4013c169c212042bb3861bea4122226_230356_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase11_huf4013c169c212042bb3861bea4122226_230356_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -1107,7 +1169,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase12.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase12_huf0f80074f082fb5657ea72edb8130387_159803_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase12_huf0f80074f082fb5657ea72edb8130387_159803_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase12_huf0f80074f082fb5657ea72edb8130387_159803_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase12_huf0f80074f082fb5657ea72edb8130387_159803_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase12_huf0f80074f082fb5657ea72edb8130387_159803_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -1133,7 +1200,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase13.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase13_hue35675e8c94fdd5145bfbb703d6e7385_335539_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase13_hue35675e8c94fdd5145bfbb703d6e7385_335539_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase13_hue35675e8c94fdd5145bfbb703d6e7385_335539_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase13_hue35675e8c94fdd5145bfbb703d6e7385_335539_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase13_hue35675e8c94fdd5145bfbb703d6e7385_335539_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -1159,7 +1231,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase14.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase14_hu629d2956ec8f7e73c76b6fed06ba7926_162247_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase14_hu629d2956ec8f7e73c76b6fed06ba7926_162247_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase14_hu629d2956ec8f7e73c76b6fed06ba7926_162247_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase14_hu629d2956ec8f7e73c76b6fed06ba7926_162247_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase14_hu629d2956ec8f7e73c76b6fed06ba7926_162247_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -1185,7 +1262,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/firebase-hugo-blog/firebase15.png"
+        srcset="
+        /blog/firebase-hugo-blog/firebase15_hue63c64bd1ea1cddaf73b622ef963ab6e_236836_330x0_resize_box_3.png 330w,
+        /blog/firebase-hugo-blog/firebase15_hue63c64bd1ea1cddaf73b622ef963ab6e_236836_660x0_resize_box_3.png 660w,
+        /blog/firebase-hugo-blog/firebase15_hue63c64bd1ea1cddaf73b622ef963ab6e_236836_1024x0_resize_box_3.png 1024w,
+        /blog/firebase-hugo-blog/firebase15_hue63c64bd1ea1cddaf73b622ef963ab6e_236836_1320x0_resize_box_3.png 2x"
+        src="/blog/firebase-hugo-blog/firebase15_hue63c64bd1ea1cddaf73b622ef963ab6e_236836_660x0_resize_box_3.png"
         alt=""
       />
       

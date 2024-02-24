@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="true"><head>
   <meta charset="utf-8" />
   
@@ -184,7 +184,7 @@
   
   <div class="min-h-[148px]"></div>
 <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
-  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
   <div class="relative max-w-[64rem] ml-auto mr-auto">
     <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
@@ -380,6 +380,16 @@
 
 
 
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
 
 
   </div>
@@ -582,8 +592,10 @@
   
   
   
+  
+  
   <img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width="96" height="96"
-    alt="Mostima" src="/img/IMG_7549.JPG" />
+    alt="Mostima" src="/img/IMG_7549_huaf5bbe7df715f343e12cab5b28f86c57_448422_192x192_fill_q75_box_center.JPG" />
   
   
   <div class="place-self-center">
@@ -913,7 +925,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/xrdp-arch-linux/remote.png"
+        srcset="
+        /blog/xrdp-arch-linux/remote_hua8333c869cea8e610441ebfae51620fc_37470_330x0_resize_box_3.png 330w,
+        /blog/xrdp-arch-linux/remote_hua8333c869cea8e610441ebfae51620fc_37470_660x0_resize_box_3.png 660w,
+        /blog/xrdp-arch-linux/remote_hua8333c869cea8e610441ebfae51620fc_37470_1024x0_resize_box_3.png 1024w,
+        /blog/xrdp-arch-linux/remote_hua8333c869cea8e610441ebfae51620fc_37470_1320x0_resize_box_3.png 2x"
+        src="/blog/xrdp-arch-linux/remote_hua8333c869cea8e610441ebfae51620fc_37470_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -939,7 +956,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/xrdp-arch-linux/xorg.png"
+        srcset="
+        /blog/xrdp-arch-linux/xorg_hu5332041db7308b33a6073972ee19f972_32215_330x0_resize_box_3.png 330w,
+        /blog/xrdp-arch-linux/xorg_hu5332041db7308b33a6073972ee19f972_32215_660x0_resize_box_3.png 660w,
+        /blog/xrdp-arch-linux/xorg_hu5332041db7308b33a6073972ee19f972_32215_1024x0_resize_box_3.png 1024w,
+        /blog/xrdp-arch-linux/xorg_hu5332041db7308b33a6073972ee19f972_32215_1320x0_resize_box_3.png 2x"
+        src="/blog/xrdp-arch-linux/xorg_hu5332041db7308b33a6073972ee19f972_32215_660x0_resize_box_3.png"
         alt=""
       />
       
@@ -967,7 +989,12 @@
       
       <img
         class="my-0 rounded-md"
-        src="/blog/xrdp-arch-linux/arch-desktop.png"
+        srcset="
+        /blog/xrdp-arch-linux/arch-desktop_hue3ec5e847c7e8a1fb1486d9a0fd2911e_294272_330x0_resize_box_3.png 330w,
+        /blog/xrdp-arch-linux/arch-desktop_hue3ec5e847c7e8a1fb1486d9a0fd2911e_294272_660x0_resize_box_3.png 660w,
+        /blog/xrdp-arch-linux/arch-desktop_hue3ec5e847c7e8a1fb1486d9a0fd2911e_294272_1024x0_resize_box_3.png 1024w,
+        /blog/xrdp-arch-linux/arch-desktop_hue3ec5e847c7e8a1fb1486d9a0fd2911e_294272_1320x0_resize_box_3.png 2x"
+        src="/blog/xrdp-arch-linux/arch-desktop_hue3ec5e847c7e8a1fb1486d9a0fd2911e_294272_660x0_resize_box_3.png"
         alt=""
       />
       

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="true"><head>
 	<meta name="generator" content="Hugo 0.119.0">
   <meta charset="utf-8" />
@@ -175,7 +175,7 @@
   
   <div class="min-h-[148px]"></div>
 <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
-  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
   <div class="relative max-w-[64rem] ml-auto mr-auto">
     <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
@@ -372,6 +372,16 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
 
   </div>
 </div>
@@ -400,14 +410,24 @@
                     
                     
                     
+                    <img class="w-full h-[1000px] object-cover m-0 nozoom" src="/img/heroback2.png" role="presentation">
+                    <div
+                        class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+                    </div>
+                    <div
+                        class="opacity-60 absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+                    </div>
+                    
                 </div>
                 <div class="relative px-8 py-16 flex flex-col items-center justify-center text-center">
                     
                     
                     
                     
+                    
+                    
                     <img class="mb-2 rounded-full h-36 w-36" width="144" height="144"
-                        alt="Mostima" src="/img/IMG_7549.JPG" />
+                        alt="Mostima" src="/img/IMG_7549_huaf5bbe7df715f343e12cab5b28f86c57_448422_288x288_fill_q75_box_center.JPG" />
                     
                     
                     <h1 class="mb-2 text-4xl font-extrabold text-neutral-800 dark:text-neutral-200">
@@ -493,7 +513,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/firebase-hugo-blog/featured.png);"></div>
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/firebase-hugo-blog/featured_hu4def801f2a36d524de7266265d9e7593_32338_600x0_resize_box_3.png);"></div>
         
       
 
@@ -664,7 +684,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/mattermost/featured.png);"></div>
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/mattermost/featured_hu41b7725831665280d47ddccc38f94d08_329164_600x0_resize_box_3.png);"></div>
         
       
 
@@ -824,7 +844,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/xrdp-arch-linux/featured.png);"></div>
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/xrdp-arch-linux/featured_hue3ec5e847c7e8a1fb1486d9a0fd2911e_294272_600x0_resize_box_3.png);"></div>
         
       
 
@@ -984,7 +1004,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/mind-wandering/featured.jpg);"></div>
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/mind-wandering/featured_hu1c230a9ceec3763c54a67f98c301e433_2256271_600x0_resize_q75_box.jpg);"></div>
         
       
 
@@ -1133,7 +1153,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/hugo-github-pages-blog/featured.png);"></div>
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/hugo-github-pages-blog/featured_huefa24338db75d75dff7a9244af95726f_195574_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1315,7 +1335,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/naive-proxy/featured.png);"></div>
+        <div class="w-full thumbnail_card nozoom" style="background-image:url(/blog/naive-proxy/featured_hubc434ab81f4ab139e72bff84c12b5c92_26042_600x0_resize_box_3.png);"></div>
         
       
 
