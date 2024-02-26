@@ -99,7 +99,7 @@
     "keywords": ["Waline","Hugo"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "278"
+    "wordCount": "1731"
   }]
   </script>
 
@@ -453,7 +453,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-24 00:00:00 &#43;0000 UTC">24 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>278 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2024-02-24 00:00:00 &#43;0000 UTC">24 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1731 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/waline-comment-system/index.md" title="views">0</span> 
     
@@ -690,6 +690,16 @@
     <li><a href="#配置方式">配置方式</a>
       <ul>
         <li><a href="#leancloud-设置数据库">LeanCLoud 设置（数据库）</a></li>
+        <li><a href="#vercel-部署服务端">Vercel 部署服务端</a></li>
+        <li><a href="#设置自定义域名">设置自定义域名</a></li>
+        <li><a href="#html-引入">HTML 引入</a></li>
+        <li><a href="#评论管理后台">评论管理后台</a></li>
+        <li><a href="#开启评论">开启评论</a></li>
+        <li><a href="#telegram-评论通知">Telegram 评论通知</a>
+          <ul>
+            <li><a href="#telegram-通知模板">Telegram 通知模板</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -708,6 +718,16 @@
     <li><a href="#配置方式">配置方式</a>
       <ul>
         <li><a href="#leancloud-设置数据库">LeanCLoud 设置（数据库）</a></li>
+        <li><a href="#vercel-部署服务端">Vercel 部署服务端</a></li>
+        <li><a href="#设置自定义域名">设置自定义域名</a></li>
+        <li><a href="#html-引入">HTML 引入</a></li>
+        <li><a href="#评论管理后台">评论管理后台</a></li>
+        <li><a href="#开启评论">开启评论</a></li>
+        <li><a href="#telegram-评论通知">Telegram 评论通知</a>
+          <ul>
+            <li><a href="#telegram-通知模板">Telegram 通知模板</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -889,32 +909,229 @@
     leancloud.app</a>)。否则，你需要为应用绑定<strong>已备案</strong>的域名</span>
 </div>
 
-<hr>
+<div id="vercel-部署服务端" class="anchor"></div>
+<h3 class="relative group">Vercel 部署服务端 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vercel-%e9%83%a8%e7%bd%b2%e6%9c%8d%e5%8a%a1%e7%ab%af" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p><a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwalinejs%2Fwaline%2Ftree%2Fmain%2Fexample"   target="_blank">
+    
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://vercel.com/button" alt="Vercel" />
+    
+  </figure>
+
+</a></p>
+<ol>
+<li>
+<p>点击上方 <kbd>Deploy</kbd> 按钮跳转至 Vercel 部署服务端</p>
+</li>
+<li>
+<p>输入一个项目名称，然后点击 <kbd>Create</kbd> 进行创建</p>
+<p>
+
+
+
 
   
   
+    
   
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/waline-comment-system/waline3.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>Vercel 会基于 Waline 的模板创建仓库</p>
+</li>
+<li>
+<p>等待片刻，会显示<code>Congratulations!</code> 提示你部署成功，然后请点击 <code>Go to Dashboard</code>前往控制台</p>
+</li>
+<li>
+<p>在顶部点击 <code> Settings</code> , 然后在左下方点击<code>Environment Variables</code> 进入环金变量配置页面</p>
+</li>
+<li>
+<p>配置三个环境变量，分别是：</p>
+<ol>
+<li>
+<p><code>LEAN_ID</code></p>
+</li>
+<li>
+<p><code>LEAN_KEY</code></p>
+</li>
+<li>
+<p><code>LEAN_MASTER_KEY</code></p>
+<p>这三个环境变量的值(Value) 分别对应上一步在 LeanCloud 中获取的 <code>AppID</code>, <code>AppKey</code> 以及 <code>MasterKey</code></p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/waline-comment-system/waline4.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+</ol>
+</li>
+<li>
+<p>配置完成所有的环境变量之后，点击顶部的 <code>Deployments</code> ,选择最近一次部署的右侧的 <code>···</code>, 然后点击 <code>Redeploy</code>，以重新部署让环境变量生效</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/waline-comment-system/waline5.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>此时会跳转至 Overview界面，并开始部署，稍等片刻 STATUS 会变成 <code>Ready</code></p>
+</li>
+<li>
+<p>可以点击右侧 <kbd>Visit</kbd> 前往部署好的网址，且此地址为你的 Waline 服务端地址</p>
+</li>
+</ol>
+<div id="设置自定义域名" class="anchor"></div>
+<h3 class="relative group">设置自定义域名 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%ae%be%e7%bd%ae%e8%87%aa%e5%ae%9a%e4%b9%89%e5%9f%9f%e5%90%8d" aria-label="锚点">#</a></span>        
+    
+</h3>
+<ol>
+<li>
+<p>点击顶部 <code>Settings</code>, 后于左侧点击 <code>Domains</code></p>
+</li>
+<li>
+<p>输入需要设置的自定义域名后，点击 <kbd>Add</kbd></p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/blog/waline-comment-system/waline6.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+</li>
+<li>
+<p>在你的域名服务器商，或 Cloudflare（如果你使用 Cloudflare 管理你的域名）处添加一条 <code>CNAME</code> 记录</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>example(你在上一步中填写的二级域名)</td>
+<td>cname.vercel-dns.com</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>等待生效后即可用自定义的域名来访问了 🎉 🎊</p>
+</li>
+</ol>
+<div id="html-引入" class="anchor"></div>
+<h3 class="relative group">HTML 引入 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#html-%e5%bc%95%e5%85%a5" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>由于我使用 Blowfish 主题，故以此主题为例</p>
+<ol>
+<li>
+<p>在博客文件夹下的 <code>/layouts/partials/comments.html</code> 中粘贴以下内容</p>
+
   
 
 
 
 <div
   
-    class="flex px-4 py-3 rounded-md"
-    style="background-color: #e63946"
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
   >
 
   <span
     
-      class="ltr:pr-3 rtl:pl-3 flex items-center"
-      style="color: #1d3557"
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
     >
 
     
 
   <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-<path fill="currentColor"  d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-2.8-5.6-5.6-11.2-9.8-16.8l-50.6 58.8s-81.4-103.6-87.1-110.6C133.1 243.8 112 273.2 112 306.8C112 375.4 162.6 416 225.7 416z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
   </span>
 
 
@@ -922,11 +1139,227 @@
 
   <span
     
-      style="color: #f1faee"
-    >未完待续</span>
+      class="dark:text-neutral-300"
+    ><strong>注意</strong>：CSS 变量可自定义， 默认样式为 <a href="https://waline.js.org/reference/client/style.html"   target="_blank">
+    变量与默认值</a></span>
 </div>
 
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- ... --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span>
+</span></span><span class="line"><span class="cl">      <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://unpkg.com/@waline/client@v2/dist/waline.css&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- ... --&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- ... --&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- &lt;div id=&#34;waline-recent&#34;&gt;&lt;/div&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- &lt;script type=&#34;module&#34;&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--     import { RecentComments } from &#39;https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.mjs&#39;; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!----&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--     RecentComments({ --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--         el: &#39;#waline-recent&#39;, --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--         serverURL: &#39;http://waline.vercel.app&#39;, --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--         count: 1, --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--     }); --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- &lt;/script&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- &lt;div id=&#34;article-info&#34;&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="c">&lt;!-- ... --&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="c">&lt;!-- 阅读量: &lt;span class=&#34;waline-pageview-count&#34; data-path=&#34;{{.RelPermalink}}&#34; /&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="c">&lt;!-- ... --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- &lt;/div&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;waline&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">import</span> <span class="p">{</span> <span class="nx">init</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;https://unpkg.com/@waline/client@v2/dist/waline.mjs&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="nx">init</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#waline&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">serverURL</span><span class="o">:</span> <span class="s1">&#39;https://waline.mostima.blog&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">lang</span><span class="o">:</span> <span class="s1">&#39;zh-CN&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">emoji</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;//unpkg.com/@waline/emojis@1.2.0/bmoji&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;//unpkg.com/@waline/emojis@1.2.0/tieba&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;//unpkg.com/@waline/emojis@1.2.0/qq&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;//unpkg.com/@waline/emojis@1.2.0/alus&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;//unpkg.com/@waline/emojis@1.1.0/bilibili&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">dark</span><span class="o">:</span> <span class="s1">&#39;html[class=&#34;scroll-smooth dark&#34;]&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="c">/*日间模式*/</span>
+</span></span><span class="line"><span class="cl">      <span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 字体大小 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 白色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-white</span><span class="p">:</span> <span class="mh">#ffff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 浅灰色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-light-grey</span><span class="p">:</span> <span class="mh">#999</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 深灰色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-dark-grey</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 主题色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-theme-color</span><span class="p">:</span> <span class="mh">#3b82f6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 活动状态的颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-active-color</span><span class="p">:</span> <span class="mh">#2ecc71</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 一般文本颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-color</span><span class="p">:</span> <span class="mh">#222</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-bgcolor</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 较浅的背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-bgcolor-light</span><span class="p">:</span> <span class="mh">#f8f8f8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 鼠标悬停时的背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-bgcolor-hover</span><span class="p">:</span> <span class="mh">#2ecc71</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 边框颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-border-color</span><span class="p">:</span> <span class="mh">#ddd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 禁用状态的背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-disable-bgcolor</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">248</span><span class="p">,</span> <span class="mi">248</span><span class="p">,</span> <span class="mi">248</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 禁用状态的文本颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-disable-color</span><span class="p">:</span><span class="mh">#bbb</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 代码块的背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-code-bgcolor</span><span class="p">:</span> <span class="mh">#282c34</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 引用块的颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-bq-color</span><span class="p">:</span> <span class="mh">#f0f0f0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 头像 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-avatar-size</span><span class="p">:</span> <span class="mf">3.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 移动设备上的头像大小 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-m-avatar-size</span><span class="p">:</span> <span class="nb">calc</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">waline</span><span class="o">-</span><span class="n">avatar</span><span class="o">-</span><span class="n">size</span><span class="p">)</span> <span class="o">*</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">13</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 徽章颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-badge-color</span><span class="p">:</span> <span class="mh">#3b82f6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* ：徽章字体大小 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-badge-font-size</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 信息块的边框 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-info-border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#999</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 信息块的文本颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-info-color</span><span class="p">:</span> <span class="mh">#999</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 信息块的字体大小 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-info-font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="c">/* 信息块背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-info-bgcolor</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">235</span><span class="p">,</span> <span class="mi">235</span><span class="p">,</span> <span class="mi">235</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 渲染选择，一般边框样式 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">waline</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 头像的圆角半径 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-avatar-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 阴影效果 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-box-shadow</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="c">/* 暗黑模式，根据用户设置 ↓ */</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">html</span><span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s2">&#34;scroll-smooth dark&#34;</span><span class="o">]</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 这是用于表示白色的CSS变量, 在暗模式下，白色将变为黑色*/</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-white</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="c">/* 浅灰色的CSS变量, 在暗模式下，变为深灰色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-light-grey</span><span class="p">:</span> <span class="mh">#999</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* --waline-light-grey: #666;*/</span>
+</span></span><span class="line"><span class="cl">         <span class="c">/* 示深灰色, 在暗模式下，变为浅灰色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-dark-grey</span><span class="p">:</span> <span class="mh">#999</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 一般文本颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-color</span><span class="p">:</span> <span class="mh">#c2c2c2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="c">/* 背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-bgcolor</span><span class="p">:</span> <span class="mh">#1E293B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="c">/* 较浅的背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-bgcolor-light</span><span class="p">:</span> <span class="mh">#2A354F</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="c">/* 边框颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-border-color</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="c">/* 禁用状态的背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-disable-bgcolor</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">68</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="c">/* 禁用状态的文本颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-disable-color</span><span class="p">:</span> <span class="mh">#888</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 引用块颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-bq-color</span><span class="p">:</span> <span class="mh">#1F2D4B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 信息块背景颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-info-bgcolor</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="c">/* 信息块字体 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-info-color</span><span class="p">:</span> <span class="mh">#888</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 信息块的边框 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--waline-info-border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#d3d3d3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+</ol>
+<div id="评论管理后台" class="anchor"></div>
+<h3 class="relative group">评论管理后台 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%af%84%e8%ae%ba%e7%ae%a1%e7%90%86%e5%90%8e%e5%8f%b0" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>评论管理后台地址为 <code>&lt;serverURL&gt;/ui/register</code>, 首个注册的用户会被设为管理员账户，之后注册的用户则为普通用户</p>
+<div id="开启评论" class="anchor"></div>
+<h3 class="relative group">开启评论 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%bc%80%e5%90%af%e8%af%84%e8%ae%ba" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>在博客目录中的 <code>/config/_default/params.toml</code> 文件下，将 <code>showComments</code> 修改为 <code>true</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">article</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">showComments</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><div id="telegram-评论通知" class="anchor"></div>
+<h3 class="relative group">Telegram 评论通知 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#telegram-%e8%af%84%e8%ae%ba%e9%80%9a%e7%9f%a5" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>Telegram 通知通过 Telegram bot 机器人实现，需要配置以下几个环境变量:</p>
+<ul>
+<li><code>TG_BOT_TOKEN</code>: Telegram 机器人用于访问 HTTP API 的 token，通过 <a href="https://t.me/BotFather"   target="_blank">
+    @BotFather</a> 创建机器人获取，必填。</li>
+<li><code>TG_CHAT_ID</code>: 接收消息对象的 <code>chat_id</code>，可以是单一用户、频道、群组，通过 <a href="https://t.me/userinfobot"   target="_blank">
+    @userinfobot</a> 获取，必填。</li>
+<li><code>AUTHOR_EMAIL</code>: 博主邮箱，用来区分发布的评论是否是博主本身发布的。如果是博主发布的则不进行提醒通知。</li>
+<li><code>SITE_NAME</code>: 网站名称，用于在消息中显示。</li>
+<li><code>SITE_URL</code>: 网站地址，用于在消息中显示。</li>
+<li><code>TG_TEMPLATE</code>: Telegram 使用的通知模板，变量与具体格式可参见下文的通知模板。未配置则使用默认模板。</li>
+</ul>
+<div id="telegram-通知模板" class="anchor"></div>
+<h4 class="relative group">Telegram 通知模板 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#telegram-%e9%80%9a%e7%9f%a5%e6%a8%a1%e6%9d%bf" aria-label="锚点">#</a></span>        
+    
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">💬 <span class="p">&lt;</span><span class="nt">your</span> <span class="na">site</span><span class="p">&gt;</span> 有一条新评论
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{self.nick}} 回复说:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s">```
+</span></span></span><span class="line"><span class="cl"><span class="s"></span>{{self.comment-}}
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{-self.commentLink}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="ge">_邮箱_</span>: <span class="sb">`{{self.mail}}`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="ge">_地址_</span>: [<span class="nt">来源文章</span>](<span class="na">{{site.postUrl}}</span>)
+</span></span></code></pre></div>
         </div>
                 
         
