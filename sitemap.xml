@@ -3,6 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://mostima.blog/others/</loc>
+    <lastmod>2024-02-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mostima.blog/others/test-artile/</loc>
+    <lastmod>2024-02-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mostima.blog/</loc>
+    <lastmod>2024-02-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://mostima.blog/blog/</loc>
     <lastmod>2024-02-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -10,12 +28,6 @@
   </url>
   <url>
     <loc>https://mostima.blog/blog/waline-comment-system/</loc>
-    <lastmod>2024-02-24T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mostima.blog/</loc>
     <lastmod>2024-02-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
