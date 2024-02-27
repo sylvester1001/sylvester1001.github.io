@@ -12,7 +12,7 @@
   <meta name="title" content="使用 Hugo &#43; GitHub Pages 搭建个人博客 &middot; Mostima" />
   
   <meta name="description" content="hugo and github pages blog" />
-  <meta name="keywords" content="Blog, Hugo, GitHub Pages, Cusdis, " />
+  <meta name="keywords" content="Blog, Hugo, GitHub Pages, Waline, " />
   
   
   <link rel="canonical" href="https://mostima.blog/blog/hugo-github-pages-blog/" />
@@ -97,10 +97,10 @@
     
     "dateModified": "2023-11-14T00:00:00\u002b00:00",
     
-    "keywords": ["Blog","Hugo","GitHub Pages","Cusdis"],
+    "keywords": ["Blog","Hugo","GitHub Pages","Waline"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2422"
+    "wordCount": "2479"
   }]
   </script>
 
@@ -454,7 +454,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-14 00:00:00 &#43;0000 UTC">14 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>2422 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-14 00:00:00 &#43;0000 UTC">14 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>2479 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/blog-hugo-githubpages/index.md" title="views">0</span> 
     
@@ -571,12 +571,12 @@
 
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cusdis/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/waline/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    Cusdis
+    Waline
   </span>
 </span>
 
@@ -748,6 +748,7 @@
     </li>
     <li><a href="#firebase">Firebase</a></li>
     <li><a href="#评论系统">评论系统</a></li>
+    <li><a href="#reference">Reference</a></li>
   </ul>
 </nav>
   </div>
@@ -799,6 +800,7 @@
     </li>
     <li><a href="#firebase">Firebase</a></li>
     <li><a href="#评论系统">评论系统</a></li>
+    <li><a href="#reference">Reference</a></li>
   </ul>
 </nav>
   </div>
@@ -906,7 +908,7 @@
             style="text-decoration-line: none !important;" href="#hugo" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>Hugo 是一个用 Go 实现的静态网站生成器，采用 Markdown 进行文章编辑， 并将 Markdown 文件转化成 HTML 文件来构建网页。支持丰富的主题配置，且可以通过 js 嵌入评论系统等插件。</p>
+<p>Hugo 是一个用 Go 实现的静态网站工具，采用 Markdown 进行文章编辑， 并将 Markdown 文件转化成 HTML 文件来构建网页。支持丰富的主题配置，且可以通过 js 嵌入评论系统等插件。</p>
 <div id="github-pages" class="anchor"></div>
 <h2 class="relative group">GitHub Pages 
     <span
@@ -1530,7 +1532,17 @@
 </span></span><span class="line"><span class="cl">  <span class="nx">isoCode</span> <span class="p">=</span> <span class="s2">&#34;zh-cn&#34;</span>
 </span></span></code></pre></div></li>
 </ol>
-<div id="可选配置" class="anchor"></div>
+<div id="正确显示中文字符的数量" class="anchor"></div>
+<h5 class="relative group">正确显示中文字符的数量 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%ad%a3%e7%a1%ae%e6%98%be%e7%a4%ba%e4%b8%ad%e6%96%87%e5%ad%97%e7%ac%a6%e7%9a%84%e6%95%b0%e9%87%8f" aria-label="锚点">#</a></span>        
+    
+</h5>
+<p>在 <code>languages.zh-cn.toml</code> 中加入以下行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">hasCJKLanguage</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><div id="可选配置" class="anchor"></div>
 <h4 class="relative group">*可选配置 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
@@ -1984,7 +1996,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-24 00:00:00 &#43;0000 UTC">24 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1723 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2024-02-24 00:00:00 &#43;0000 UTC">24 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1761 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/waline-comment-system/index.md" title="views">0</span> 
     
@@ -2082,6 +2094,21 @@
         
     
 </section>
+<hr>
+<div id="reference" class="anchor"></div>
+<h2 class="relative group">Reference 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reference" aria-label="锚点">#</a></span>        
+    
+</h2>
+<ol>
+<li><a href="https://cuttontail.blog/blog/create-a-wesite-using-github-pages-and-hugo/"   target="_blank">
+    <em>如何用 github pages + hugo 搭建个人博客</em>. 小绵尾巴. (2022, September 27). 小绵尾巴</a></li>
+<li><a href="https://blowfish.page/docs/installation/"   target="_blank">
+    <em>Installation</em>. Nuno, C. (2020, August 16). Blowfish.</a></li>
+</ol>
 
         </div>
                 
