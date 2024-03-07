@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Mostima</title>
+    <title>Tags on 十一角落</title>
     <link>https://mostima.blog/tags/</link>
-    <description>Recent content in Tags on Mostima</description>
+    <description>Recent content in Tags on 十一角落</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 Mostima</copyright>
-    <lastBuildDate>Thu, 29 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://mostima.blog/tags/blog/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/tags/blog/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish</title>
+      <link>https://mostima.blog/tags/blowfish/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/tags/blowfish/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Friend Link</title>
+      <link>https://mostima.blog/tags/friend-link/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/tags/friend-link/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://mostima.blog/tags/hugo/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/tags/hugo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://mostima.blog/tags/life/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/tags/life/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Music</title>
       <link>https://mostima.blog/tags/music/</link>
@@ -19,41 +69,11 @@
     </item>
     
     <item>
-      <title>音乐</title>
-      <link>https://mostima.blog/tags/%E9%9F%B3%E4%B9%90/</link>
-      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://mostima.blog/tags/%E9%9F%B3%E4%B9%90/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://mostima.blog/tags/hugo/</link>
-      <pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://mostima.blog/tags/hugo/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Waline</title>
       <link>https://mostima.blog/tags/waline/</link>
       <pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/tags/waline/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://mostima.blog/tags/blog/</link>
-      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://mostima.blog/tags/blog/</guid>
       <description></description>
       
     </item>
@@ -114,6 +134,16 @@
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mostima.blog/tags/mind-wandering/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cusdis</title>
+      <link>https://mostima.blog/tags/cusdis/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/tags/cusdis/</guid>
       <description></description>
       
     </item>

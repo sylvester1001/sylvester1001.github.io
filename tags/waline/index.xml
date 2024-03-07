@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Waline on Mostima</title>
+    <title>Waline on 十一角落</title>
     <link>https://mostima.blog/tags/waline/</link>
-    <description>Recent content in Waline on Mostima</description>
+    <description>Recent content in Waline on 十一角落</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 Mostima</copyright>
@@ -16,16 +16,6 @@
       <guid>https://mostima.blog/blog/waline-comment-system/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/waline-comment-system/featured.png" />
-    </item>
-    
-    <item>
-      <title>使用 Hugo &#43; GitHub Pages 搭建个人博客</title>
-      <link>https://mostima.blog/blog/hugo-github-pages-blog/</link>
-      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mostima.blog/blog/hugo-github-pages-blog/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hugo-github-pages-blog/featured.png" />
     </item>
     
   </channel>
