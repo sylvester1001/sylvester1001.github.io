@@ -961,8 +961,7 @@
 <p>在 <code>&lt;博客根目录&gt;/layouts/shortcodes</code> 下创建文件 <code>friend.html</code>, 将以下内容写入并保存</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ if .IsNamedParams }}
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">{{</span> <span class="err">.</span><span class="na">Get</span> <span class="err">&#34;</span><span class="na">url</span><span class="err">&#34;</span> <span class="err">}}</span> <span class="na">title</span><span class="o">=</span><span class="s">{{</span> <span class="err">.</span><span class="na">Get</span> <span class="err">&#34;</span><span class="na">name</span><span class="err">&#34;</span> <span class="err">}}</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;friendurl&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;frienddiv&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;frienddivleft&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;frienddiv&#34;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;frienddivleft&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;myfriend&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">{{</span> <span class="err">.</span><span class="na">Get</span> <span class="err">&#34;</span><span class="na">logo</span><span class="err">&#34;</span> <span class="err">}}</span> <span class="p">/&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;frienddivright&#34;</span><span class="p">&gt;</span>
@@ -1222,11 +1221,11 @@
   
 
 </p>
-<!-- 
+<!-- ```
 <a target="_blank" href=https://mostima.blog title=mostima class="friendurl">
   <div class="frienddiv">
     <div class="frienddivleft">
-      <img class="myfriend" src=https://mostima.blog/img/IMG_0060.jpg />
+      <img class="myfriend" src=https://mostima.blog/img/avatar.jpg />
     </div>
     <div class="frienddivright">
       <div class="friendname">mostima</div>
@@ -1236,7 +1235,7 @@
 </a>
 
 
- -->
+``` -->
 <p>效果如下：
 
 <a target="_blank" href=https://mostima.blog title=Mostima class="friendurl">
