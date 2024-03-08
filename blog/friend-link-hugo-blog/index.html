@@ -104,7 +104,7 @@
     "keywords": ["Friend Link","Hugo","Blowfish","Blog"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "806"
+    "wordCount": "910"
   }]
   </script>
 
@@ -591,7 +591,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-03-05 00:00:00 &#43;0000 UTC">2024-03-05</time><span class="px-2 text-primary-500">&middot;</span><span>806 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2024-03-05 00:00:00 &#43;0000 UTC">2024-03-05</time><span class="px-2 text-primary-500">&middot;</span><span>910 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/friend-link/index.md" 
     
@@ -1155,88 +1155,13 @@
     </span>        
     
 </h2>
-<p>最后在友链页面中使用以下方式引入友链：
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/blog/friend-link-hugo-blog/friendlink-1.png"
-        alt=""
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<!-- 
-```md
-
-<a target="_blank" href=%3c%e5%9c%b0%e5%9d%80%3e title=&lt;朋友名字&gt; class="friendurl">
-  <div class="frienddiv">
-    <div class="frienddivleft">
-      <img class="myfriend" src=%3clogo%20%e5%9c%b0%e5%9d%80%3e />
-    </div>
-    <div class="frienddivright">
-      <div class="friendname">&lt;朋友名字&gt;</div>
-      <div class="friendinfo">&lt;简介内容&gt;</div>
-    </div>
-  </div>
-</a>
-
-
-
-``` -->
-<p>例如：
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/blog/friend-link-hugo-blog/friendlink-2.png"
-        alt=""
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<!-- ```
-<a target="_blank" href=https://mostima.blog title=mostima class="friendurl">
-  <div class="frienddiv">
-    <div class="frienddivleft">
-      <img class="myfriend" src=https://mostima.blog/img/avatar.jpg />
-    </div>
-    <div class="frienddivright">
-      <div class="friendname">mostima</div>
-      <div class="friendinfo">That was less than stellar</div>
-    </div>
-  </div>
-</a>
-
-
-``` -->
-<p>效果如下：
+<p>最后在友链页面中使用以下方式引入友链：</p>
+<!-- ![](friendlink-1.png) -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">friend</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;&lt;朋友名字&gt;&#34;</span> <span class="na">url</span><span class="o">=</span><span class="s">&#34;&lt;地址&gt;&#34;</span> <span class="na">logo</span><span class="o">=</span><span class="s">&#34;&lt;logo 地址&gt;&#34;</span> <span class="na">word</span><span class="o">=</span><span class="s">&#34;&lt;简介内容&gt;&#34;</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></div><p>例如：</p>
+<!-- ![](friendlink-2.png) -->
+<pre tabindex="0"><code>{{&lt; friend name=&#34;mostima&#34; url=&#34;https://mostima.blog&#34; logo=&#34;https://mostima.blog/img/avatar.jpg&#34; word=&#34;That was less than stellar&#34; &gt;}}
+</code></pre><p>效果如下：
 
 <a target="_blank" href=https://mostima.blog title=Mostima class="friendurl">
   <div class="frienddiv">
