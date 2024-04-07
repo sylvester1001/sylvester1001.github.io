@@ -103,7 +103,7 @@
     "keywords": ["Arch Linux","xrdp"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "771"
+    "wordCount": "769"
   }]
   </script>
 
@@ -583,7 +583,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-16 00:00:00 &#43;0000 UTC">2023-11-16</time><span class="px-2 text-primary-500">&middot;</span><span>771 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-16 00:00:00 &#43;0000 UTC">2023-11-16</time><span class="px-2 text-primary-500">&middot;</span><span>769 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/xrdp-in-archlinux/index.md" 
     
@@ -982,9 +982,37 @@
 <p>在<code>/etc/X11/Xwrapper.config</code>中加入以下内容：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">allowed_users</span><span class="o">=</span>anybody
 </span></span><span class="line"><span class="cl"><span class="nv">needs_root_rights</span><span class="o">=</span>no
-</span></span></code></pre></div><blockquote>
-<p>如果没有这个文件则手动创建</p>
-</blockquote>
+</span></span></code></pre></div>
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    >如果没有这个文件则手动创建</span>
+</div>
+
 </li>
 <li>
 <p>在<code>~/.xinitrc</code>中写入以下内容：</p>
@@ -994,9 +1022,37 @@
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XDG_SESSION_TYPE</span><span class="o">=</span>x11
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GDK_BACKEND</span><span class="o">=</span>x11
 </span></span><span class="line"><span class="cl"><span class="nb">exec</span> dbus-launch gnome-session
-</span></span></code></pre></div><blockquote>
-<p>同样，如果没有此文件则手动创建</p>
-</blockquote>
+</span></span></code></pre></div>
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    >同样若无此文件则手动创建</span>
+</div>
+
 </li>
 <li>
 <p>赋予<code>~/.xinitrc</code>执行权限</p>
@@ -1107,7 +1163,7 @@
     </figure>
   
 
-</p>
+:w</p>
 
         </div>
                 
