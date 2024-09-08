@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Waline on 十一角落</title>
+    <link>https://mostima.blog/tags/waline/</link>
+    <description>Recent content in Waline on 十一角落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Mostima</copyright>
+    <lastBuildDate>Sat, 24 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/waline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 博客添加 Waline 评论系统</title>
+      <link>https://mostima.blog/blog/waline-comment-system/</link>
+      <pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/waline-comment-system/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/waline-comment-system/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

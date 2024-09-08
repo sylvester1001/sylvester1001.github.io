@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xrdp on 十一角落</title>
+    <link>https://mostima.blog/tags/xrdp/</link>
+    <description>Recent content in Xrdp on 十一角落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Mostima</copyright>
+    <lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/xrdp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux 中配置 xrdp 远程桌面</title>
+      <link>https://mostima.blog/blog/xrdp-arch-linux/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/xrdp-arch-linux/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/xrdp-arch-linux/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

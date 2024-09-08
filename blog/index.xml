@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on 十一角落</title>
+    <link>https://mostima.blog/blog/</link>
+    <description>Recent content in Blog on 十一角落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Mostima</copyright>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 博客 Blowfish 主题添加友链</title>
+      <link>https://mostima.blog/blog/friend-link-hugo-blog/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/friend-link-hugo-blog/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/friend-link-hugo-blog/featured.png" />
+    </item>
+    
+    <item>
+      <title>分享一首喜欢的歌</title>
+      <link>https://mostima.blog/blog/song-sharing/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/song-sharing/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/song-sharing/featured.JPG" />
+    </item>
+    
+    <item>
+      <title>Hugo 博客添加 Waline 评论系统</title>
+      <link>https://mostima.blog/blog/waline-comment-system/</link>
+      <pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/waline-comment-system/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/waline-comment-system/featured.png" />
+    </item>
+    
+    <item>
+      <title>Hugo 博客中配置 Firebase 的方法</title>
+      <link>https://mostima.blog/blog/firebase-hugo-blog/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/firebase-hugo-blog/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/firebase-hugo-blog/featured.png" />
+    </item>
+    
+    <item>
+      <title>基于 Docker 部署 Mattermost</title>
+      <link>https://mostima.blog/blog/mattermost/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/mattermost/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/mattermost/featured.png" />
+    </item>
+    
+    <item>
+      <title>Arch Linux 中配置 xrdp 远程桌面</title>
+      <link>https://mostima.blog/blog/xrdp-arch-linux/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/xrdp-arch-linux/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/xrdp-arch-linux/featured.png" />
+    </item>
+    
+    <item>
+      <title>睡前的一些胡思乱想</title>
+      <link>https://mostima.blog/blog/mind-wandering/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/mind-wandering/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/mind-wandering/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>使用 Hugo &#43; GitHub Pages 搭建个人博客</title>
+      <link>https://mostima.blog/blog/hugo-github-pages-blog/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/hugo-github-pages-blog/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hugo-github-pages-blog/featured.png" />
+    </item>
+    
+    <item>
+      <title>基于 Digital Ocean 服务器从零搭建 NaïveProxy 节点</title>
+      <link>https://mostima.blog/blog/naive-proxy/</link>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/naive-proxy/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/naive-proxy/featured.png" />
+    </item>
+    
+    <item>
+      <title>使用 HNet Web 搭建网页代理</title>
+      <link>https://mostima.blog/blog/hnet/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/hnet/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hnet/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

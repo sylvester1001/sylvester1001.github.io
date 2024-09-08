@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on 十一角落</title>
+    <link>https://mostima.blog/series/</link>
+    <description>Recent content in Series on 十一角落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Mostima</copyright>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 博客搭建</title>
+      <link>https://mostima.blog/series/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/series/hugo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proxy on 十一角落</title>
+    <link>https://mostima.blog/tags/proxy/</link>
+    <description>Recent content in Proxy on 十一角落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Mostima</copyright>
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mostima.blog/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 HNet Web 搭建网页代理</title>
+      <link>https://mostima.blog/blog/hnet/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mostima.blog/blog/hnet/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://mostima.blog/blog/hnet/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
